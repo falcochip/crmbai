@@ -6,6 +6,14 @@
   --navy-text: #0A1F44;
 }
 
+/* Container for centered content */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Global resets */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,11 +31,12 @@ header {
   color: var(--off-white);
 }
 
+/* Navigation */
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 0; /* vertical padding; horizontal is in .container */
 }
 
 .nav .links a {
@@ -46,9 +55,10 @@ header {
   cursor: pointer;
 }
 
+/* Hero */
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem 0;
 }
 
 .hero h1 {
@@ -60,7 +70,7 @@ header {
   font-size: 1.1rem;
 }
 
-/* ==== HERO BUTTON ==== */
+/* Hero button */
 .hero-btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -75,17 +85,18 @@ header {
 
 /* Sections */
 section {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   background: #fff;
 }
 
+/* Section titles */
 .section-title {
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
   color: var(--soft-navy);
 }
 
-/* Who It’s For */
+/* Who It’s For cards */
 .cards {
   display: flex;
   gap: 1rem;
@@ -128,7 +139,7 @@ section {
   text-align: center;
 }
 
-/* Pricing */
+/* Pricing plans */
 .pricing {
   display: flex;
   gap: 1rem;
@@ -151,7 +162,7 @@ section {
   cursor: pointer;
 }
 
-/* Contact Form */
+/* Contact form */
 .form-group {
   margin-bottom: 1rem;
 }
