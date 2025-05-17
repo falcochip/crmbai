@@ -60,6 +60,19 @@ header {
   font-size: 1.1rem;
 }
 
+/* ==== HERO BUTTON ==== */
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: var(--mint-green);
+  color: var(--off-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* Sections */
 section {
   padding: 3rem 2rem;
@@ -153,15 +166,4 @@ section {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-.hero-btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  background: var(--mint-green);
-  color: var(--off-white);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
 }
