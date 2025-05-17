@@ -26,6 +26,7 @@ body {
   line-height: 1.5;
 }
 
+/* Full-width Header background */
 header {
   background: var(--soft-navy);
   color: var(--off-white);
@@ -36,7 +37,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0; /* vertical padding; horizontal is in .container */
+  padding: 1rem 0; /* vertical padding; horizontal is handled by .container */
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .nav .links a {
@@ -68,12 +74,11 @@ header {
 
 .hero p {
   font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Hero button */
 .hero-btn {
-  display: inline-block;
-  margin-top: 1.5rem;
   background: var(--mint-green);
   color: var(--off-white);
   border: none;
