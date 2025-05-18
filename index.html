@@ -1,62 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRM Data Solutions Mockup</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRM Cleanup Services</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Full-width Header with Nav -->
-  <header>
-    <div class="container nav-container">
-      <div class="logo">LOGO</div>
-      <nav class="links">
-        <a href="#features">Features</a>
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header class="site-header">
+    <nav class="nav-container">
+      <div class="nav-logo">CRM-bai</div>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact" class="contact-btn">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero Section with Background Image -->
-  <section class="hero-hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>In Dolore <span>eum totam id sed</span> temporibus</h1>
-      <p>Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your CRM is a Mess — <br> We’ll Fix That.</h1>
+      <p>Affordable CRM cleanup services for small businesses.<br>
+        No subscriptions. No Software bloat. Just clean organized CRM data you can actually use.</p>
       <div class="hero-buttons">
-        <button class="btn-primary">Get Started</button>
-        <button class="btn-secondary">Our Work</button>
+        <a href="#" class="btn primary">Book a Free Audit</a>
+        <a href="#" class="btn secondary">Schedule a Call</a>
       </div>
     </div>
   </section>
 
-  <!-- Zig-Zag Section -->
-  <section class="zigzag">
-    <div class="container">
-      <div class="row">
-        <div class="col text">
-          <h2>Enenatis Sem Arcu Pretium</h2>
-          <p>Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor.</p>
-          <button class="btn-primary">Get Started</button>
-        </div>
-        <div class="col image">
-          <img src="images/feature1.jpg" alt="Feature image">
-        </div>
-      </div>
-      <div class="row reverse">
-        <div class="col image">
-          <img src="images/feature2.jpg" alt="Feature image">
-        </div>
-        <div class="col text">
-          <h2>Ducimus Illum Fugit Et</h2>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <button class="btn-primary">Learn More</button>
-        </div>
-      </div>
+  <section class="who-we-help" id="overview">
+    <h2>Who We Help</h2>
+    <div class="tabs">
+      <button class="tab active" data-tab="sales">Sales & Marketing Pros</button>
+      <button class="tab" data-tab="ecommerce">E-Commerce</button>
+      <button class="tab" data-tab="services">Service Businesses</button>
+      <button class="tab" data-tab="anyone">Anyone</button>
     </div>
+    <div class="tab-content" id="sales">
+      <p><strong>Too many leads, not enough clarity?</strong><br>Your CRM is overflowing — contacts from forms, events, LinkedIn, cold outreach...
+        and it's nearly impossible to tell who's qualified, who's duplicated, and who's ready to close.</p>
+      <p>We help sales and marketing teams reclaim control of their pipeline by:</p>
+      <ul>
+        <li>Merging duplicate records</li>
+        <li>Organizing contacts by source, stage, or intent</li>
+        <li>Cleaning up tags, notes, and custom fields</li>
+        <li>Removing outdated or irrelevant data</li>
+      </ul>
+    </div>
+    <div class="tab-content hidden" id="ecommerce">[E-Commerce content here]</div>
+    <div class="tab-content hidden" id="services">[Service Businesses content here]</div>
+    <div class="tab-content hidden" id="anyone">[Anyone content here]</div>
   </section>
 
   <script src="script.js"></script>
