@@ -199,35 +199,36 @@ section#contact {
 .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   font-weight: bolder !important;
 }
-.why-partners-section {
-  background: linear-gradient(to right, var(--brand-mint) 5%, var(--brand-navy) 95%);
+
+.why-combined {
+  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 100%);
   padding-top: 4rem;
   padding-bottom: 4rem;
   color: white;
 }
 
-.why-partners-section h2 {
+.why-combined h2 {
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-.why-partners-section .why-list {
-  max-width: 800px;
-  margin: 0 auto 3rem;
+.why-combined .why-list {
+  max-width: 700px;
+  margin: 0 auto;
   padding: 0;
 }
 
-.why-partners-section .why-list li {
+.why-combined .why-list li {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  font-size: 1.125rem;
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
-.why-partners-section .icon-bullet {
-  background-color: rgba(255, 255, 255, 0.2);
+.icon-bullet {
+  background-color: rgba(255, 255, 255, 0.25);
   border: 2px solid white;
   color: white;
   border-radius: 50%;
@@ -236,19 +237,20 @@ section#contact {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   flex-shrink: 0;
 }
 
-.partner-logos {
+.logo-strip {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
+  margin-top: 2rem;
 }
 
 .partner-logo {
-  max-height: 3rem;
+  max-height: 50px;
   width: auto;
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
@@ -257,4 +259,5 @@ section#contact {
 .partner-logo:hover {
   transform: scale(1.05);
 }
+
 
