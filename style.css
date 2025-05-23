@@ -199,3 +199,10 @@ section#contact {
 .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   font-weight: bolder !important;
 }
+
+#services {
+  background: linear-gradient(to bottom, #f0f4f8 80%, #e3ecf0 100%);
+}
+.why-choose-section {
+  background: linear-gradient(to bottom, #e3ecf0 0%, #f0f4f8 100%);
+}
