@@ -187,42 +187,63 @@ section.pd-10 {
 /* =======================================
    🌟 Why Choose Us (Shared Visual Motif)
 ======================================= */
+/* 🌟 Why Choose Us (simple gradient) */
 .why-choose-us {
-  padding: 6rem 1rem 4rem;
-  position: relative;
-  overflow: hidden;
+  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 100%);
+  color: #fff;
+  padding: 5rem 1rem;
 }
 
-.card-frost {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border-radius: 1rem;
-  padding: 2rem;
-  max-width: 960px;
+.why-choose-us h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.why-list {
+  max-width: 800px;
   margin: 0 auto;
-}
-
-.why-choose-us .container {
-  max-width: 1140px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-ul.why-list {
   padding-left: 0;
   list-style: none;
-  max-width: 700px;
 }
 
 .why-list li {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
-  margin-bottom: 1.25rem;
-  font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.95);
 }
+
+.icon-bullet {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* 🤝 Partner Logos */
+.partner-logos {
+  background-color: var(--brand-navy);
+  padding: 3rem 1rem;
+}
+
+.partner-logo {
+  max-height: 50px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
 
 
 .icon-bullet {
@@ -237,34 +258,6 @@ ul.why-list {
   justify-content: center;
   font-size: 1.2rem;
   flex-shrink: 0;
-}
-
-/* =======================================
-   🤝 Partner Logos
-======================================= */
-.partner-logos {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem 1rem;
-  overflow-x: auto;
-  background: linear-gradient(to bottom right, #1a3d63 0%, #285c8c 100%);
-  color: white;
-}
-
-.partner-logo {
-  height: 50px;
-  width: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.partner-logo:hover {
-  transform: scale(1.05);
 }
 
 #salesforce,
