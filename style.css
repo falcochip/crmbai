@@ -79,3 +79,12 @@ section h2 {
     align-items: center;
   }
 }
+
+.offcanvas {
+  background-color: #fff; /* or match your brand */
+}
+
+.offcanvas .nav-link {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
