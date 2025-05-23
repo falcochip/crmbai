@@ -108,7 +108,7 @@ section h2 {
 /* Sections */
 section.py-5 {
   padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  padding-bottom: 0 !important;
 }
 section.bg-light,
 section#contact {
@@ -200,4 +200,24 @@ h2.mb-4{
 }
 .partner-logo:hover {
   transform: scale(1.05);
+}
+
+.why-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.icon-bullet {
+  background-color: var(--brand-mint);
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
