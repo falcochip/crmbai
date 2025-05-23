@@ -194,7 +194,6 @@ section.pd-10 {
 }
 
 .why-list {
-  max-width: 800px;
   margin: 0 auto;
   padding-left: 0;
   list-style: none;
@@ -205,20 +204,29 @@ section.pd-10 {
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
 }
 
+.why-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.125rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
 .icon-bullet {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--brand-mint);
+  color: var(--brand-navy);
   border-radius: 50%;
   width: 28px;
   height: 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  color: #fff;
+  font-size: 1rem;
+  flex-shrink: 0;
 }
 
 /* 🤝 Partner Logos */
