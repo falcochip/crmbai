@@ -70,11 +70,10 @@ section h2 {
   box-sizing: border-box;
   color: var(--brand-navy);;
 
-   background:
-    linear-gradient(rgba(40, 92, 140, 0.85), rgba(40, 92, 140, 0.85)),
+   background: 
+    linear-gradient(to right, rgba(40, 92, 140, 0.7), rgba(40, 92, 140, 0.7)),
     url('./img/hero-bg.jpg') center/cover no-repeat;
   background-blend-mode: overlay;
-   backdrop-filter: blur(2px);
 }
 
 /* Buttons */
