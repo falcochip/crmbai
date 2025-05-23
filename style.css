@@ -37,6 +37,10 @@ section h2 {
   margin-right: 1rem;
 }
 
+.nav-link {
+  font-weight: bold;
+}
+
 /* Responsive navbar spacing */
 @media (max-width: 991.98px) {
   .navbar .container {
@@ -65,12 +69,11 @@ section h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--brand-navy);
   padding: 2rem;
   box-sizing: border-box;
-  color: var(--brand-offwhite);;
+  color: var(--brand-offwhite);
   background:
-    linear-gradient(rgba(40, 92, 140, 0.93), rgba(40, 92, 140, 0.93)),
+    linear-gradient(rgba(40, 92, 140, 0.99), rgba(40, 92, 140, 0.99)),
     url('./img/hero-bg.jpg') center/cover no-repeat;
   background-blend-mode: multiply;
 }
@@ -79,6 +82,7 @@ section h2 {
 .hero p {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 /* Buttons */
 .btn-danger {
   background-color: var(--brand-coral);
@@ -105,4 +109,36 @@ section h2 {
 section.bg-light,
 section#contact {
   background-color: var(--brand-offwhite);
+}
+
+/* Who We Help Section */
+#services ul li {
+  margin-bottom: 0.5rem;
+}
+
+.help-image-placeholder {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  background-color: #ccc;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
+.nav-tabs .nav-link {
+  font-weight: 600;
+  color: var(--brand-navy);
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid var(--brand-coral);
+  color: var(--brand-navy);
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+  color: var(--brand-coral);
 }
