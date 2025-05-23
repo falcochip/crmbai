@@ -200,14 +200,6 @@ section.pd-10 {
 }
 
 .why-list li {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.why-list li {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
