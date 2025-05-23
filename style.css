@@ -188,20 +188,31 @@ section.pd-10 {
    🌟 Why Choose Us (Shared Visual Motif)
 ======================================= */
 
+/* Frosted Card Style */
+.frosted-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
 
+/* Why Choose Us alignment fix */
 .why-list {
-  margin: 0 auto;
   padding-left: 0;
   list-style: none;
+  margin: 0;
 }
 
 .why-list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* fix: vertical align */
   gap: 1rem;
   font-size: 1.125rem;
   color: #333;
   margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .icon-bullet {
@@ -216,6 +227,7 @@ section.pd-10 {
   font-size: 1.5rem;
   flex-shrink: 0;
 }
+
 
 /* 🤝 Partner Logos */
 .partner-logos {
