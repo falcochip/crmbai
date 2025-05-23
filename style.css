@@ -118,7 +118,7 @@ section#contact {
 
 .help-image-placeholder {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   aspect-ratio: 1 / 1;
   background-color: #ccc;
   border-radius: 0.5rem;
@@ -129,14 +129,16 @@ section#contact {
   font-weight: 600;
   color: var(--brand-navy);
   border: none;
-  border-bottom: 3px solid transparent;
   transition: all 0.2s ease-in-out;
 }
 
-.nav-tabs .nav-link.active {
-  border-bottom: 3px solid var(--brand-coral);
-  color: var(--brand-navy);
-  background-color: transparent;
+.nav-tabs .nav-link {
+  border-bottom:3px solid var(--brand-coral);
+  .active {
+    border-bottom: 8px solid var(--brand-coral);
+    color: var(--brand-navy);
+    background-color: transparent;
+  }
 }
 
 .nav-tabs .nav-link:hover {
