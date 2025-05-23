@@ -280,3 +280,7 @@ ul.why-list {
     margin: auto;
     padding-left: 10em;
 }
+
+#salesforce, #pipedrive {
+    height: 20rem;
+}
