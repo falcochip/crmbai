@@ -224,6 +224,6 @@ ul.why-list{
   flex-shrink: 0;
 }
 
-span.icon-bullet {
-  font-weight: bolder;
+#checkmark{
+  font-weight: bolder !important;
 }
