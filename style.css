@@ -188,12 +188,24 @@ section.pd-10 {
    🌟 Why Choose Us (Shared Visual Motif)
 ======================================= */
 .why-choose-us {
-  background: linear-gradient(to bottom, var(--brand-offwhite) 0%, var(--brand-mint) 15%, var(--brand-navy) 100%);
+  background: linear-gradient(to bottom right, #1a3d63 0%, #285c8c 100%);
   color: white;
   padding: 6rem 1rem 4rem;
   position: relative;
   overflow: hidden;
 }
+
+.why-choose-us .container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #f2f2f2;
+}
+
 
 .why-choose-us h2 {
   font-weight: 700;
