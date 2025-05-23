@@ -200,9 +200,49 @@ section#contact {
   font-weight: bolder !important;
 }
 
-#services {
-  background: linear-gradient(to bottom, #f0f4f8 80%, #e3ecf0 100%);
+
+.why-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
 }
-.why-choose-section {
-  background: linear-gradient(to bottom, #e3ecf0 0%, #f0f4f8 100%);
+
+.why-text .why-list {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0;
 }
+
+.why-text .why-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.125rem;
+  padding: 0.5rem 0;
+  justify-content: center;
+}
+
+.why-text .icon-bullet {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  color: white;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.partner-logo {
+  max-height: 3.5rem;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+.partner-logo:hover {
+  transform: scale(1.1);
+}
+
+<li data-aos="fade-up" data-aos-delay="100">...</li>
