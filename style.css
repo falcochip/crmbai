@@ -243,6 +243,26 @@ ul.why-list{
   flex-shrink: 0;
 }
 
+.frosted-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-choose-us {
+  background: linear-gradient(to right, var(--brand-mint), var(--brand-navy));
+  color: white;
+}
+
+
 /* =======================================
    🎨 Bootstrap Icons Fix
 ======================================= */
