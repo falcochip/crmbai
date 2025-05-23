@@ -208,12 +208,12 @@ section.pd-10 {
   background-color: var(--brand-mint);
   color: var(--brand-navy);
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   flex-shrink: 0;
 }
 
