@@ -149,4 +149,11 @@ section#contact {
 
 .tab-pane.active{
   font-size: larger;
+  padding-left: 1rem;
+}
+
+h2.mb-4{
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
