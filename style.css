@@ -208,18 +208,22 @@ section.pd-10 {
 /* Partner Logos Section */
 .partner-logos {
   display: flex;
-  align-items: center;
+  flex-wrap: nowrap; /* 💡 Prevents line break */
   justify-content: center;
-    padding: 1rem 0;
+  align-items: center;
+  gap: 3rem;
+  overflow-x: auto; /* Optional: allows scrolling on smaller screens */
+  padding: 2rem 1rem;
+  max-width: 100%;
 }
 
-
 .partner-logo {
-  max-height: 50px;
+  height: 50px;
   width: auto;
   object-fit: contain;
+  flex-shrink: 0; /* Prevents shrinking to avoid wrap */
   filter: brightness(0) invert(1);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 #salesforce {
