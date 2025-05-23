@@ -180,8 +180,9 @@ h2.mb-4{
 
 /* Partner Logos Section */
 .partner-logos {
-  background: linear-gradient(90deg, var(--brand-mint), var(--brand-navy));
+  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 20%, var(--brand-navy) 100%);
 }
+
 
 .partner-logo {
   max-height: 60px;
