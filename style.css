@@ -133,9 +133,6 @@ section.pd-10 {
 /* =======================================
    👥 Who We Help Tabs
 ======================================= */
-#services ul li {
-  margin-bottom: 0.5rem;
-}
 
 .help-image-placeholder {
   width: 100%;
@@ -167,7 +164,9 @@ section.pd-10 {
 .nav-tabs .nav-link:hover {
   color: var(--brand-coral);
 }
-
+.tab-content{
+  max-width: 44rem;
+}
 .tab-pane.active {
   font-size: 1.125rem;
   padding: 2rem;
