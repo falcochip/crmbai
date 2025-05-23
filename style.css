@@ -201,6 +201,9 @@ h2.mb-4{
   transform: scale(1.05);
 }
 
+ul.why-list{
+  padding-left: 1rem;
+}
 .why-list li {
   display: flex;
   align-items: center;
