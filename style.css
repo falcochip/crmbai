@@ -163,11 +163,6 @@ h2.mb-4{
 }
 
 /* Why Choose Us */
-.why-choose-us h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--brand-navy);
-}
 
 .why-choose-us li span {
   font-size: 1.1rem;
