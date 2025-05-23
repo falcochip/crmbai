@@ -234,21 +234,6 @@ section.pd-10 {
 }
 
 
-
-.icon-bullet {
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid white;
-  color: white;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  flex-shrink: 0;
-}
-
 #salesforce,
 #pipedrive {
   max-height: 6rem;
