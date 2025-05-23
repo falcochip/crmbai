@@ -188,14 +188,12 @@ section.pd-10 {
    🌟 Why Choose Us (Shared Visual Motif)
 ======================================= */
 .why-choose-us {
-  background: linear-gradient(to bottom right, #1a3d63 0%, #285c8c 100%);
-  color: white;
   padding: 6rem 1rem 4rem;
   position: relative;
   overflow: hidden;
 }
 
-.why-choose-us .container {
+.card-frost {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -234,6 +232,11 @@ ul.why-list {
   color: rgba(255, 255, 255, 0.95);
 }
 
+.partner-logos{
+  background: linear-gradient(to bottom right, #1a3d63 0%, #285c8c 100%);
+  color: white;
+}
+
 .icon-bullet {
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid white;
@@ -259,6 +262,8 @@ ul.why-list {
   gap: 3rem;
   padding: 2rem 1rem;
   overflow-x: auto;
+  background: linear-gradient(to bottom right, #1a3d63 0%, #285c8c 100%);
+  color: white;
 }
 
 .partner-logo {
