@@ -142,6 +142,10 @@ section.pd-10 {
   padding-bottom: 10rem;
 }
 
+.section-divider {
+  height: 80px;
+  background: linear-gradient(to bottom, #f0f4f8 0%, #e7f5f0 100%);
+}
 /* =======================================
    👥 Who We Help Tabs
 ======================================= */
@@ -193,12 +197,19 @@ section.pd-10 {
 ======================================= */
 /* Why Choose Us */
 .why-choose-us {
-  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 20%, var(--brand-navy) 100%);
-  padding: 2rem;
-  }
+  background: linear-gradient(to right, #f0f4f8, #e7f5f0); /* much softer */
+  color: #333;
+  padding: 5rem 1rem;
+}
+
 .why-choose-us li span {
   font-size: 1.1rem;
   color: #333;
+}
+.why-choose-us .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .bg-offwhite {
