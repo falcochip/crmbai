@@ -129,16 +129,14 @@ section#contact {
   font-weight: 600;
   color: var(--brand-navy);
   border: none;
+  border-bottom: 3px solid transparent;
   transition: all 0.2s ease-in-out;
 }
 
-.nav-tabs .nav-link {
-  border-bottom:3px solid var(--brand-coral);
-  .active {
-    border-bottom: 8px solid var(--brand-coral);
-    color: var(--brand-navy);
-    background-color: transparent;
-  }
+.nav-tabs .nav-link.active {
+  border-bottom: 8px solid var(--brand-coral);
+  color: var(--brand-navy);
+  background-color: transparent;
 }
 
 .nav-tabs .nav-link:hover {
