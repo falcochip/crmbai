@@ -180,13 +180,54 @@ section.pd-10 {
 /* =======================================
    ✅ Why Choose Us
 ======================================= */
+/* Why Choose Us */
+
+.why-choose-us li span {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.bg-offwhite {
+  background-color: var(--brand-offwhite);
+}
+
+/* Partner Logos Section */
+.partner-logos {
+  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 20%, var(--brand-navy) 100%);
+  height: 30vh;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    padding: 1rem 0;
+}
+
+
+.partner-logo {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+#salesforce {
+  max-height: 6rem;
+}
+#pipedrive {
+  max-height: 6rem;
+}
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
+ul.why-list{
+  padding-left: 1rem;
+}
 .why-list li {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.125rem;
-  color: #333;
+  margin-bottom: 1.25rem;
 }
 
 .icon-bullet {
@@ -200,35 +241,6 @@ section.pd-10 {
   justify-content: center;
   font-size: 1.2rem;
   flex-shrink: 0;
-}
-
-/* =======================================
-   🤝 Partner Logos
-======================================= */
-.partner-logos {
-  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 20%, var(--brand-navy) 100%);
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.partner-logo {
-  max-height: 50px;
-  width: auto;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-  transition: transform 0.2s ease-in-out;
-}
-
-#salesforce,
-#pipedrive {
-  max-height: 6rem;
-}
-
-.partner-logo:hover {
-  transform: scale(1.05);
 }
 
 /* =======================================
