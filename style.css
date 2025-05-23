@@ -190,7 +190,7 @@ section.pd-10 {
 .why-choose-us {
   background-image:
     url('./img/puzzle-texture.svg'),
-    linear-gradient(to right, #A8E6CF 2%, #285c8c 30%, #285c8c 100%);
+    linear-gradient(to right, #0f3f6a 0%, #1b4e84 100%);
   background-repeat: repeat, no-repeat;
   background-size: 120px, cover;
   background-blend-mode: overlay;
@@ -198,6 +198,7 @@ section.pd-10 {
   padding: 6rem 1rem 4rem;
   text-align: left;
 }
+
 
 
 .why-choose-us h2 {
