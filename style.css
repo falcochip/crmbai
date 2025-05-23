@@ -188,11 +188,16 @@ section.pd-10 {
    🌟 Why Choose Us (Frosted Look)
 ======================================= */
 .why-choose-us {
-  background: linear-gradient(to right, #A8E6CF 2%, #285c8c 30%, #285c8c 100%);
+  background:
+    linear-gradient(to right, #A8E6CF 2%, #285c8c 30%, #285c8c 100%),
+    url('./img/puzzle-texture.svg');
+  background-repeat: repeat;
+  background-size: 120px;
   color: white;
   padding: 6rem 1rem 4rem;
   text-align: left;
 }
+
 
 .why-choose-us h2 {
   font-weight: 700;
