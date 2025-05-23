@@ -123,7 +123,7 @@ section#contact {
 
 .nav-tabs .nav-link {
   font-weight: 600;
-  font-size: larger;
+  font-size: large;
   color: var(--brand-navy);
   border-bottom: 1px solid var(--brand-coral);
   transition: all 0.2s ease-in-out;
@@ -200,5 +200,8 @@ section#contact {
   font-weight: bolder !important;
 }
 
-
+section.pd-10 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
