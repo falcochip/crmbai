@@ -195,6 +195,9 @@ h2.mb-4{
 #salesforce {
   max-height: 6rem;
 }
+#pipedrive {
+  max-height: 6rem;
+}
 .partner-logo:hover {
   transform: scale(1.05);
 }
