@@ -189,7 +189,6 @@ section.pd-10 {
 ======================================= */
 /* 🌟 Why Choose Us (simple gradient) */
 .why-choose-us {
-  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 100%);
   color: #fff;
   padding: 5rem 1rem;
 }
@@ -230,7 +229,7 @@ section.pd-10 {
 
 /* 🤝 Partner Logos */
 .partner-logos {
-  background-color: var(--brand-navy);
+  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 100%);
   padding: 3rem 1rem;
 }
 
