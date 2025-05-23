@@ -46,3 +46,17 @@ section h2 {
   background-color: var(--brand-mint) !important;
   color: #285c8c;
 }
+
+/* Full-screen hero */
+.hero {
+  height: 100vh;       /* Full viewport height */
+  width: 100vw;         /* Full viewport width */
+  display: flex;        /* Center content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f0f4f8;  /* Background color or image */
+  padding: 2rem;
+  box-sizing: border-box;
+}
