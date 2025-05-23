@@ -185,27 +185,20 @@ section.pd-10 {
 }
 
 /* =======================================
-   🌟 Why Choose Us (Frosted Look)
+   🌟 Why Choose Us (Shared Visual Motif)
 ======================================= */
 .why-choose-us {
-  background-image:
-    url('./img/puzzle-texture.svg'),
-    linear-gradient(to right, #0f3f6a 0%, #1b4e84 100%);
-  background-repeat: repeat, no-repeat;
-  background-size: 120px, cover;
-  background-blend-mode: overlay;
+  background: linear-gradient(to bottom, var(--brand-offwhite) 0%, var(--brand-mint) 15%, var(--brand-navy) 100%);
   color: white;
   padding: 6rem 1rem 4rem;
-  text-align: left;
+  position: relative;
+  overflow: hidden;
 }
-
-
 
 .why-choose-us h2 {
   font-weight: 700;
   font-size: 2.25rem;
   color: #fff;
-  text-align: left;
 }
 
 .why-choose-us .container {
@@ -223,7 +216,6 @@ ul.why-list {
 .why-list li {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 1.25rem;
   font-size: 1.125rem;
@@ -280,14 +272,4 @@ ul.why-list {
 ======================================= */
 .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   font-weight: bolder !important;
-}
-
-.frosted-card.aos-init.aos-animate {
-    max-width: 30rem;
-    margin: auto;
-    padding-left: 10em;
-}
-
-#salesforce, #pipedrive {
-    height: 20rem;
 }
