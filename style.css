@@ -1,144 +1,48 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --brand-navy: #285c8c;
+  --brand-mint: #A8E6CF;
+  --brand-coral: #FF6B6B;
+  --brand-offwhite: #F0F4F8;
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: #f2f4f6;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--brand-offwhite);
   color: #333;
-  line-height: 1.6;
 }
 
-/* Utility */
-.full-screen {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
+.navbar {
+  background-color: #fff;
 }
 
-/* Navigation */
-.site-header {
-  background: #fff;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo {
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: #333;
-  font-weight: 500;
-}
-
-.contact-btn {
-  background-color: #ff6b5c;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-}
-
-/* Hero Section */
-.hero {
-  background-color: #285c8c;
-  color: #ffffff;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
-  color: #e0e6ec;
-}
-
-.hero-buttons .btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 1rem;
-  margin-right: 1rem;
-  display: inline-block;
-}
-
-.btn.primary {
-  background-color: #ff6b5c;
-  color: white;
-}
-
-.btn.secondary {
-  background-color: white;
-  color: #285c8c;
-}
-
-/* Who We Help Section */
-.who-we-help {
-  background-color: #f7f9fa;
-}
-
-.who-we-help h2 {
-  font-size: 2rem;
-  color: #285c8c;
-  margin-bottom: 1rem;
-}
-
-.tabs {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.tab {
-  padding: 0.5rem 1rem;
-  background-color: #e1ecf4;
+.navbar .btn-coral {
+  background-color: var(--brand-coral);
   border: none;
+}
+
+header#overview {
+  background-color: var(--brand-navy);
+}
+
+section.bg-light, section#contact {
+  background-color: var(--brand-offwhite);
+}
+
+section h2 {
+  color: var(--brand-navy);
+  font-weight: 600;
+}
+
+.btn-danger {
+  background-color: var(--brand-coral);
+  border: none;
+}
+
+.btn-outline-light {
+  border-color: #fff;
+}
+
+.table-primary {
+  background-color: var(--brand-mint) !important;
   color: #285c8c;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.tab.active {
-  background-color: #285c8c;
-  color: white;
-}
-
-.tab-content {
-  max-width: 600px;
-}
-
-.tab-content.hidden {
-  display: none;
-}
-
-ul {
-  padding-left: 1.2rem;
 }

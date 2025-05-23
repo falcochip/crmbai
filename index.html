@@ -1,60 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CRM Cleanup Services</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRM‑bai Cleanup Services</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav-container">
-      <div class="nav-logo">CRM-bai</div>
-      <ul class="nav-links">
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact" class="contact-btn">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#overview">
+        <img src="logo.png" alt="CRM‑bai" height="32">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item ms-3"><a class="btn btn-coral text-white" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="overview" class="py-5 text-center text-white">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Your CRM is a Mess &ndash; We&rsquo;ll Fix That.</h1>
+      <p class="lead mb-4">Affordable CRM cleanup services for small businesses.<br>No subscriptions. No software bloat. Just clean organized CRM data you can actually use.</p>
+      <a href="#contact" class="btn btn-danger me-2">Book a Free Audit</a>
+      <a href="#contact" class="btn btn-outline-light">Schedule a Call</a>
+    </div>
   </header>
 
-  <section class="hero full-screen">
-    <div class="hero-content">
-      <h1>Your CRM is a Mess — <br> We’ll Fix That.</h1>
-      <p>Affordable CRM cleanup services for small businesses.<br>
-        No subscriptions. No Software bloat. Just clean organized CRM data you can actually use.</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn primary">Book a Free Audit</a>
-        <a href="#" class="btn secondary">Schedule a Call</a>
+  <!-- Who We Help -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Who We Help</h2>
+      <ul class="nav nav-tabs mb-4" id="helpTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#sales" type="button">Sales &amp; Marketing Pros</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ecom" type="button">E‑Commerce</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service" type="button">Service Businesses</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#anyone" type="button">Anyone</button>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="sales">
+          <!-- Example content -->
+          <p>Too many leads, not enough clarity? Your CRM is overflowing &ndash; and it&rsquo;s nearly impossible to tell who&rsquo;s qualified, who&rsquo;s duplicated, and who&rsquo;s ready to close.</p>
+        </div>
+        <div class="tab-pane fade" id="ecom">
+          <p>...</p>
+        </div>
+        <div class="tab-pane fade" id="service">
+          <p>...</p>
+        </div>
+        <div class="tab-pane fade" id="anyone">
+          <p>...</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="who-we-help full-screen" id="overview">
-    <h2>Who We Help</h2>
-    <div class="tabs">
-      <button class="tab active" data-tab="sales">Sales & Marketing Pros</button>
-      <button class="tab" data-tab="ecommerce">E-Commerce</button>
-      <button class="tab" data-tab="services">Service Businesses</button>
-      <button class="tab" data-tab="anyone">Anyone</button>
-    </div>
-    <div class="tab-content" id="sales">
-      <p><strong>Too many leads, not enough clarity?</strong><br>Your CRM is overflowing — contacts from forms, events, LinkedIn, cold outreach...
-        and it's nearly impossible to tell who's qualified, who's duplicated, and who's ready to close.</p>
-      <p>We help sales and marketing teams reclaim control of their pipeline by:</p>
-      <ul>
-        <li>Merging duplicate records</li>
-        <li>Organizing contacts by source, stage, or intent</li>
-        <li>Cleaning up tags, notes, and custom fields</li>
-        <li>Removing outdated or irrelevant data</li>
+  <!-- Why Choose Us -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Why Choose Us</h2>
+      <ul class="list-unstyled">
+        <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Platform-flexible (HubSpot, Salesforce, Zoho, Pipedrive, Airtable, even spreadsheets)</li>
+        <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Hands-on, human-led service &mdash; not just automation</li>
+        <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Flat-rate pricing based on contact volume, not hours or complexity</li>
       </ul>
     </div>
-    <div class="tab-content hidden" id="ecommerce">[E-Commerce content here]</div>
-    <div class="tab-content hidden" id="services">[Service Businesses content here]</div>
-    <div class="tab-content hidden" id="anyone">[Anyone content here]</div>
   </section>
 
+  <!-- Partner Logos -->
+  <section class="py-5">
+    <div class="container text-center">
+      <!-- Place partner logos here -->
+      <img src="logos.png" alt="Partner Logos" class="img-fluid">
+    </div>
+  </section>
+
+  <!-- Our Packages -->
+  <section id="pricing" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Our Packages</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-primary">
+            <tr>
+              <th>Feature</th>
+              <th>CRM Audit</th>
+              <th>Clean-up (&lt;1000 records)</th>
+              <th>Clean-up (&gt;1000 records)</th>
+              <th>Monthly Hygiene</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CRM Health Report</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+            </tr>
+            <tr>
+              <td>Top Fixes Recommendation</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+            </tr>
+            <tr>
+              <td>Data Cleanup</td>
+              <td>&#10007;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+            </tr>
+            <tr>
+              <td>Data Standardization</td>
+              <td>&#10007;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+            </tr>
+            <tr>
+              <td>Custom Views/Filters</td>
+              <td>&#10007;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+              <td>&#10003;</td>
+            </tr>
+            <tr>
+              <td>Regular Maintenance</td>
+              <td>&#10007;</td>
+              <td>&#10007;</td>
+              <td>&#10007;</td>
+              <td>&#10003;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#contact" class="btn btn-coral">Schedule a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Let’s Talk</h2>
+      <form>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Full Name">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-12">
+            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-coral">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,17 +1,9 @@
-const tabs = document.querySelectorAll('.tab');
-const contents = document.querySelectorAll('.tab-content');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // Remove active class from all tabs
-    tabs.forEach(t => t.classList.remove('active'));
-    // Add active to clicked tab
-    tab.classList.add('active');
-
-    // Hide all content
-    contents.forEach(content => content.classList.add('hidden'));
-    // Show corresponding content
-    const contentId = tab.getAttribute('data-tab');
-    document.getElementById(contentId).classList.remove('hidden');
+document.addEventListener('DOMContentLoaded', function() {
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
   });
 });
