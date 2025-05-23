@@ -60,3 +60,22 @@ section h2 {
   padding: 2rem;
   box-sizing: border-box;
 }
+
+.navbar-logo {
+  height: clamp(40px, 8vw, 60px);
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+.navbar-brand {
+  margin-right: 1rem;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
