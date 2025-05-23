@@ -275,3 +275,9 @@ ul.why-list {
 .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   font-weight: bolder !important;
 }
+
+.frosted-card.aos-init.aos-animate {
+    max-width: 30rem;
+    margin: auto;
+    padding-left: 10em;
+}
