@@ -230,19 +230,25 @@ section.pd-10 {
 
 
 /* 🤝 Partner Logos */
-.partner-logos-grid {
-  padding: 4rem 1rem;
-  background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0);
-  background-size: 40px 40px;
+.partner-logos-clean {
+  padding: 3rem 1rem;
   background-color: var(--brand-offwhite);
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
 }
 
 .logo-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: start;
   align-items: center;
+  gap: 3rem;
+  padding-left: 0.5rem;
 }
 
 .partner-logo {
@@ -254,6 +260,7 @@ section.pd-10 {
 .partner-logo:hover {
   opacity: 1;
 }
+
 
 #salesforce,
 #pipedrive {
