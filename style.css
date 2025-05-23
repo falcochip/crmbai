@@ -2,49 +2,29 @@
   --brand-navy: #285c8c;
   --brand-mint: #A8E6CF;
   --brand-coral: #FF6B6B;
-  --brand-offwhite: #F6F9FC;
+  --brand-offwhite: #F0F4F8;
 }
 
-/* Global */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--brand-offwhite);
   color: #333;
-  scroll-behavior: smooth;
-}
-
-/* Typography */
-h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  margin-bottom: 2rem;
-  color: var(--brand-navy);
-}
-
-p, li {
-  font-size: 1.05rem;
   line-height: 1.7;
 }
 
-section h2 {
-  padding-left: 1rem;
+h2 {
+  color: var(--brand-navy);
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
-/* Navbar */
 .navbar {
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .navbar .btn-coral {
   background-color: var(--brand-coral);
   border: none;
-  transition: background-color 0.3s ease;
-}
-
-.navbar .btn-coral:hover {
-  background-color: #ff4e4e;
 }
 
 .navbar-logo {
@@ -58,59 +38,50 @@ section h2 {
 }
 
 .nav-link {
-  font-weight: bold;
-  transition: color 0.2s ease;
+  font-weight: 600;
 }
 
-.nav-link:hover {
-  color: var(--brand-coral);
-}
-
-/* Responsive navbar */
 @media (max-width: 991.98px) {
   .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .navbar-nav {
     align-items: flex-start;
     text-align: left;
     gap: 0.5rem;
   }
-
   .navbar .btn {
     width: fit-content;
   }
 }
 
-/* Hero Section */
 .hero {
   height: 90vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
+  box-sizing: border-box;
   color: var(--brand-offwhite);
-  background: linear-gradient(rgba(40, 92, 140, 0.98), rgba(40, 92, 140, 0.98)),
-              url('./img/hero-bg.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(rgba(40, 92, 140, 0.99), rgba(40, 92, 140, 0.99)),
+    url('./img/hero-bg.jpg') center/cover no-repeat;
   background-blend-mode: multiply;
 }
 
 .hero h1,
 .hero p {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Buttons */
 .btn-danger {
   background-color: var(--brand-coral);
   border: none;
-  padding: 0.6rem 1.2rem;
 }
 
 .btn-outline-light {
@@ -119,28 +90,49 @@ section h2 {
 }
 
 .btn-outline-light:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 
-/* Tabs */
+.table-primary {
+  background-color: var(--brand-mint) !important;
+  color: var(--brand-navy);
+}
+
+section.bg-light,
+section#contact {
+  background-color: var(--brand-offwhite);
+}
+
+#services ul li {
+  margin-bottom: 0.5rem;
+}
+
+.help-image-placeholder {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  background-color: #ccc;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
 .nav-tabs {
   border: none;
-  padding-left: 1rem;
 }
 
 .nav-tabs .nav-link {
   font-weight: 600;
   font-size: 1.1rem;
   color: var(--brand-navy);
-  border: none;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-tabs .nav-link.active {
-  border-bottom: 5px solid var(--brand-coral);
-  background: transparent;
+  border-bottom: 4px solid var(--brand-coral);
   color: var(--brand-navy);
+  background-color: transparent;
 }
 
 .nav-tabs .nav-link:hover {
@@ -148,35 +140,21 @@ section h2 {
 }
 
 .tab-pane.active {
+  font-size: 1.125rem;
   padding-left: 1rem;
 }
 
-/* Help Section */
-#services ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* Visual Placeholder */
-.help-image-placeholder {
-  width: 100%;
-  max-width: 500px;
-  aspect-ratio: 1 / 1;
-  background-color: #ccc;
-  border-radius: 0.75rem;
-  margin: 0 auto;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-}
-
-/* Why Choose Us Bullets */
-ul.why-list {
-  padding-left: 1rem;
+.tab-shadow {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
 .why-list li {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: #333;
 }
 
 .icon-bullet {
@@ -192,7 +170,6 @@ ul.why-list {
   flex-shrink: 0;
 }
 
-/* Partner Logos */
 .partner-logos {
   background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 20%, var(--brand-navy) 100%);
   height: 20rem;
@@ -202,24 +179,12 @@ ul.why-list {
   padding: 1rem 0;
 }
 
-.logo-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-}
-
 .partner-logo {
   max-height: 50px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
-  transition: transform 0.2s ease;
-}
-
-.partner-logo:hover {
-  transform: scale(1.07);
+  transition: transform 0.2s ease-in-out;
 }
 
 #salesforce,
@@ -227,13 +192,10 @@ ul.why-list {
   max-height: 6rem;
 }
 
-/* Table */
-.table-primary {
-  background-color: var(--brand-mint) !important;
-  color: var(--brand-navy);
+.partner-logo:hover {
+  transform: scale(1.05);
 }
 
-/* AOS Animations (optional) */
-[data-aos] {
-  transition: all 0.6s ease;
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+  font-weight: bolder !important;
 }
