@@ -161,3 +161,36 @@ h2.mb-4{
   padding-left: 1rem;
   padding-bottom: 1rem;
 }
+
+/* Why Choose Us */
+.why-choose-us h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brand-navy);
+}
+
+.why-choose-us li span {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.bg-offwhite {
+  background-color: var(--brand-offwhite);
+}
+
+/* Partner Logos Section */
+.partner-logos {
+  background: linear-gradient(90deg, var(--brand-mint), var(--brand-navy));
+}
+
+.partner-logo {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+}
