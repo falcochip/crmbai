@@ -230,21 +230,30 @@ section.pd-10 {
 
 
 /* 🤝 Partner Logos */
-.partner-logos {
-  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 100%);
-  padding: 3rem 1rem;
+.partner-logos-grid {
+  padding: 4rem 1rem;
+  background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-color: var(--brand-offwhite);
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
 }
 
 .partner-logo {
-  max-height: 50px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.2s ease;
+  max-height: 40px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 
 .partner-logo:hover {
-  transform: scale(1.05);
+  opacity: 1;
 }
-
 
 #salesforce,
 #pipedrive {
