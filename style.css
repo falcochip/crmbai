@@ -5,27 +5,11 @@
   --brand-offwhite: #F0F4F8;
 }
 
+/* Global */
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--brand-offwhite);
   color: #333;
-}
-
-.navbar {
-  background-color: #fff;
-}
-
-.navbar .btn-coral {
-  background-color: var(--brand-coral);
-  border: none;
-}
-
-header#overview {
-  background-color: var(--brand-navy);
-}
-
-section.bg-light, section#contact {
-  background-color: var(--brand-offwhite);
 }
 
 section h2 {
@@ -33,32 +17,14 @@ section h2 {
   font-weight: 600;
 }
 
-.btn-danger {
+/* Navbar */
+.navbar {
+  background-color: #fff;
+}
+
+.navbar .btn-coral {
   background-color: var(--brand-coral);
   border: none;
-}
-
-.btn-outline-light {
-  border-color: #fff;
-}
-
-.table-primary {
-  background-color: var(--brand-mint) !important;
-  color: #285c8c;
-}
-
-/* Full-screen hero */
-.hero {
-  height: 100vh;       /* Full viewport height */
-  width: 100vw;         /* Full viewport width */
-  display: flex;        /* Center content */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #285c8c;  /* Background color or image */
-  padding: 2rem;
-  box-sizing: border-box;
 }
 
 .navbar-logo {
@@ -71,20 +37,64 @@ section h2 {
   margin-right: 1rem;
 }
 
-
+/* Responsive navbar spacing */
 @media (max-width: 991.98px) {
   .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
+  .navbar-nav {
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+  }
+
+  .navbar .btn {
+    width: fit-content;
+  }
 }
 
-.offcanvas {
-  background-color: #fff; /* or match your brand */
+/* Hero Section */
+.hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--brand-navy);
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #fff;
 }
 
-.offcanvas .nav-link {
-  font-size: 1.1rem;
-  padding: 0.5rem 0;
+/* Buttons */
+.btn-danger {
+  background-color: var(--brand-coral);
+  border: none;
+}
+
+.btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Table */
+.table-primary {
+  background-color: var(--brand-mint) !important;
+  color: var(--brand-navy);
+}
+
+/* Sections */
+section.bg-light,
+section#contact {
+  background-color: var(--brand-offwhite);
 }
