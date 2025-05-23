@@ -1,3 +1,6 @@
+/* =======================================
+   🎨 CSS Theme Variables
+======================================= */
 :root {
   --brand-navy: #285c8c;
   --brand-mint: #A8E6CF;
@@ -5,6 +8,9 @@
   --brand-offwhite: #F0F4F8;
 }
 
+/* =======================================
+   🔤 Global Styles
+======================================= */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--brand-offwhite);
@@ -18,6 +24,9 @@ h2 {
   font-size: 2.5rem;
 }
 
+/* =======================================
+   🔝 Navbar
+======================================= */
 .navbar {
   background-color: #fff;
 }
@@ -57,6 +66,9 @@ h2 {
   }
 }
 
+/* =======================================
+   🦸 Hero Section
+======================================= */
 .hero {
   height: 90vh;
   width: 100vw;
@@ -79,6 +91,9 @@ h2 {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* =======================================
+   🔘 Buttons
+======================================= */
 .btn-danger {
   background-color: var(--brand-coral);
   border: none;
@@ -94,16 +109,30 @@ h2 {
   color: #fff;
 }
 
+/* =======================================
+   📊 Table
+======================================= */
 .table-primary {
   background-color: var(--brand-mint) !important;
   color: var(--brand-navy);
 }
 
+/* =======================================
+   🧾 Sections
+======================================= */
 section.bg-light,
 section#contact {
   background-color: var(--brand-offwhite);
 }
 
+section.pd-10 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* =======================================
+   👥 Who We Help Tabs
+======================================= */
 #services ul li {
   margin-bottom: 0.5rem;
 }
@@ -117,8 +146,8 @@ section#contact {
   margin: 0 auto;
 }
 
-.nav-tabs{
-  border:none;
+.nav-tabs {
+  border: none;
 }
 
 .nav-tabs .nav-link {
@@ -141,13 +170,17 @@ section#contact {
 
 .tab-pane.active {
   font-size: 1.125rem;
-  padding-left: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(255, 107, 107, 0.08);
+  border: 1px solid rgba(255, 107, 107, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
-.tab-shadow {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-}
-
+/* =======================================
+   ✅ Why Choose Us
+======================================= */
 .why-list li {
   display: flex;
   align-items: center;
@@ -170,6 +203,9 @@ section#contact {
   flex-shrink: 0;
 }
 
+/* =======================================
+   🤝 Partner Logos
+======================================= */
 .partner-logos {
   background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 20%, var(--brand-navy) 100%);
   height: 20rem;
@@ -196,12 +232,9 @@ section#contact {
   transform: scale(1.05);
 }
 
+/* =======================================
+   🎨 Bootstrap Icons Fix
+======================================= */
 .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   font-weight: bolder !important;
 }
-
-section.pd-10 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
