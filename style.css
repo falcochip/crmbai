@@ -224,6 +224,6 @@ ul.why-list{
   flex-shrink: 0;
 }
 
-#checkmark{
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
   font-weight: bolder !important;
 }
