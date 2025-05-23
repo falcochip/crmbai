@@ -110,27 +110,27 @@ section#contact {
 
 .help-image-placeholder {
   width: 100%;
-  max-width: 500px;
+  max-width: 30rem;
   aspect-ratio: 1 / 1;
   background-color: #ccc;
   border-radius: 0.5rem;
   margin: 0 auto;
 }
 
-.nav-tabs {
-  border: none;
+.nav-tabs{
+  border:none;
 }
 
 .nav-tabs .nav-link {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: larger;
   color: var(--brand-navy);
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid var(--brand-coral);
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-tabs .nav-link.active {
-  border-bottom: 4px solid var(--brand-coral);
+  border-bottom: 8px solid var(--brand-coral);
   color: var(--brand-navy);
   background-color: transparent;
 }
@@ -200,64 +200,5 @@ section#contact {
   font-weight: bolder !important;
 }
 
-.why-combined {
-  background: linear-gradient(to right, var(--brand-mint) 0%, var(--brand-navy) 100%);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  color: white;
-}
-
-.why-combined h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.why-combined .why-list {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.why-combined .why-list li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.icon-bullet {
-  background-color: rgba(255, 255, 255, 0.25);
-  border: 2px solid white;
-  color: white;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-
-.logo-strip {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 2rem;
-}
-
-.partner-logo {
-  max-height: 50px;
-  width: auto;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.partner-logo:hover {
-  transform: scale(1.05);
-}
 
 
