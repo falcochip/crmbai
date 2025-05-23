@@ -191,19 +191,20 @@ section.pd-10 {
   background: linear-gradient(to right, #A8E6CF 2%, #285c8c 30%, #285c8c 100%);
   color: white;
   padding: 6rem 1rem 4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .why-choose-us h2 {
   font-weight: 700;
   font-size: 2.25rem;
   color: #fff;
+  text-align: left;
 }
 
 .why-choose-us .container {
   max-width: 1140px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 ul.why-list {
@@ -216,7 +217,7 @@ ul.why-list {
 .why-list li {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 1.25rem;
   font-size: 1.125rem;
