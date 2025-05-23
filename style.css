@@ -106,6 +106,10 @@ section h2 {
 }
 
 /* Sections */
+section.py-5 {
+  padding-top: 5rem !important
+  padding-bottom: 5rem !important;
+}
 section.bg-light,
 section#contact {
   background-color: var(--brand-offwhite);
@@ -148,7 +152,7 @@ section#contact {
 }
 
 .tab-pane.active{
-  font-size: larger;
+  font-size: large;
   padding-left: 1rem;
 }
 
