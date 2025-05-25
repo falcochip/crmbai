@@ -290,3 +290,42 @@ section.pd-10 {
 .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   font-weight: bolder !important;
 }
+
+.frosted-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Table Styling */
+.clean-table {
+  border-collapse: collapse;
+  width: 100%;
+  background: transparent;
+}
+
+.clean-table th {
+  background-color: var(--brand-mint);
+  color: var(--brand-navy);
+  font-weight: 600;
+  padding: 0.75rem;
+  text-align: center;
+  border: none;
+}
+
+.clean-table td {
+  padding: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+/* Adjust icons for clarity */
+.clean-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
