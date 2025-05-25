@@ -230,14 +230,14 @@ section.pd-10 {
 
 
 /* 🤝 Partner Logos */
-/*.partner-logos-strip {
+.partner-logos-strip {
   background: linear-gradient(to right, var(--brand-mint), var(--brand-navy));
   padding: 3rem 1rem 4rem;
   overflow: hidden;
   border-top: none
 }
 
-.logo-row {
+/*.logo-row {
   display: flex;
   flex-wrap: nowrap;
   gap: 2rem 3rem;
