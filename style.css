@@ -239,7 +239,7 @@ section.pd-10 {
 
 .logo-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 2rem 3rem;
   justify-content: center;
   align-items: center;
@@ -267,7 +267,36 @@ section.pd-10 {
 #pipedrive {
   max-height: 6rem;
 }
+/* ✅ Responsive scale down on small screens */
+@media (max-width: 768px) {
+  .logo-row {
+    gap: 1.5rem;
+  }
 
+  .partner-logo {
+    max-height: 40px;
+  }
+
+  #salesforce,
+  #pipedrive {
+    max-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-row {
+    gap: 1rem;
+  }
+
+  .partner-logo {
+    max-height: 36px;
+  }
+
+  #salesforce,
+  #pipedrive {
+    max-height: 44px;
+  }
+}
 /* =======================================
    🎨 Bootstrap Icons Fix
 ======================================= */
