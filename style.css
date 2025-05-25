@@ -230,7 +230,7 @@ section.pd-10 {
 
 
 /* 🤝 Partner Logos */
-.partner-logos-strip {
+/*.partner-logos-strip {
   background: linear-gradient(to right, var(--brand-mint), var(--brand-navy));
   padding: 3rem 1rem 4rem;
   overflow: hidden;
@@ -266,37 +266,51 @@ section.pd-10 {
 #salesforce,
 #pipedrive {
   max-height: 6rem;
-}
-/* ✅ Responsive scale down on small screens */
-@media (max-width: 768px) {
-  .logo-row {
-    gap: 1.5rem;
-  }
+}*/
 
+.logo-row {
+  display: flex;
+  flex-wrap: nowrap;            /* stay on one line */
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  max-width: 100%;
+  overflow-x: hidden;           /* prevent scroll */
+  box-sizing: border-box;
+}
+
+.partner-logo {
+  height: auto;
+  max-height: 50px;
+  width: auto;
+  flex: 0 1 auto;               /* allow shrinking */
+  max-width: 10vw;              /* important for responsive scaling */
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  object-fit: contain;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
   .partner-logo {
     max-height: 40px;
-  }
-
-  #salesforce,
-  #pipedrive {
-    max-height: 48px;
+    max-width: 12vw;
   }
 }
 
-@media (max-width: 480px) {
-  .logo-row {
-    gap: 1rem;
-  }
-
+@media (max-width: 500px) {
   .partner-logo {
     max-height: 36px;
-  }
-
-  #salesforce,
-  #pipedrive {
-    max-height: 44px;
+    max-width: 14vw;
   }
 }
+
 /* =======================================
    🎨 Bootstrap Icons Fix
 ======================================= */
