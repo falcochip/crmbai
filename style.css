@@ -251,7 +251,6 @@ section.pd-10 {
 .partner-logo {
   max-height: 50px;
   width: auto;
-  max-width: 150px;
   flex: 0 1 auto;
   filter: brightness(0) invert(1);
   opacity: 0.85;
