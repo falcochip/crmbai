@@ -232,55 +232,28 @@ section.pd-10 {
 /* 🤝 Partner Logos */
 .partner-logos-strip {
   background: linear-gradient(to right, var(--brand-mint), var(--brand-navy));
-  padding: 3rem 1rem 4rem;
-  overflow: hidden;
-  border-top: none
-}
-
-/*.logo-row {
+  padding: 5rem 1rem; /* Increased vertical padding */
   display: flex;
-  flex-wrap: nowrap;
-  gap: 2rem 3rem;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
-
-.partner-logo {
-  max-height: 50px;
-  width: auto;
-  flex: 0 1 auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
-  transition: transform 0.3s ease;
-}
-
-.partner-logo:hover {
-  transform: scale(1.05);
-  opacity: 1;
-}
-*/
 
 .logo-row {
   display: flex;
-  flex-wrap: nowrap;            /* stay on one line */
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-  padding: 0 1rem;
-  max-width: 100%;
-  overflow-x: hidden;           /* prevent scroll */
-  box-sizing: border-box;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .partner-logo {
   height: auto;
-  max-height: 4rem;
+  max-height: 60px;          /* slightly larger */
   width: auto;
-  flex: 0 1 auto;               /* allow shrinking */
-  max-width: 10vw;              /* important for responsive scaling */
+  flex: 0 1 auto;
   filter: brightness(0) invert(1);
   opacity: 0.85;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -292,26 +265,24 @@ section.pd-10 {
   opacity: 1;
 }
 
-
-
-#salesforce,
-#pipedrive {
-  max-height: 6rem;
-}
-
 @media (max-width: 768px) {
   .partner-logo {
-    max-height: 40px;
-    max-width: 12vw;
+    max-height: 50px;
+  }
+  .logo-row {
+    gap: 1.5rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .partner-logo {
-    max-height: 36px;
-    max-width: 14vw;
+    max-height: 40px;
+  }
+  .logo-row {
+    gap: 1rem;
   }
 }
+
 
 /* =======================================
    🎨 Bootstrap Icons Fix
