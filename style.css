@@ -261,12 +261,7 @@ section.pd-10 {
   transform: scale(1.05);
   opacity: 1;
 }
-
-
-#salesforce,
-#pipedrive {
-  max-height: 6rem;
-}*/
+*/
 
 .logo-row {
   display: flex;
@@ -282,7 +277,7 @@ section.pd-10 {
 
 .partner-logo {
   height: auto;
-  max-height: 50px;
+  max-height: 4rem;
   width: auto;
   flex: 0 1 auto;               /* allow shrinking */
   max-width: 10vw;              /* important for responsive scaling */
@@ -295,6 +290,13 @@ section.pd-10 {
 .partner-logo:hover {
   transform: scale(1.05);
   opacity: 1;
+}
+
+
+
+#salesforce,
+#pipedrive {
+  max-height: 6rem;
 }
 
 @media (max-width: 768px) {
