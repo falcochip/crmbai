@@ -231,11 +231,25 @@ section.pd-10 {
 
 /* 🤝 Partner Logos */
 .partner-logos-strip {
-  background-color: var(--brand-offwhite);
+  background: linear-gradient(to right, var(--brand-mint), var(--brand-navy));
   padding: 3rem 0 4rem;
   margin-top: 2rem;
   position: relative;
 }
+
+.partner-logo {
+  max-height: 50px;
+  width: auto;
+  filter: brightness(0) invert(1); /* keep logos white */
+  transition: transform 0.3s ease;
+  opacity: 0.85;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
 
 .logo-divider {
   height: 1px;
@@ -251,18 +265,6 @@ section.pd-10 {
   align-items: center;
   gap: 3rem;
   flex-wrap: wrap;
-}
-
-.partner-logo {
-  max-height: 36px;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-  filter: brightness(0) invert(1); /* ensure white logos are visible */
-}
-
-.partner-logo:hover {
-  opacity: 1;
-  filter: none;
 }
 
 
