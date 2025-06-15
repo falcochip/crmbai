@@ -305,6 +305,7 @@ section.pd-10 {
 .pricing-row {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0;
   flex-wrap: wrap;
 }
@@ -330,13 +331,16 @@ section.pd-10 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   line-height: 1.4;
+  text-align: center; /* ✅ NEW */
 }
 
 .pricing-card .price {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;     /* Larger like example */
+  font-weight: 700;
+  margin: 0 auto 1rem;
+  text-align: center;
   color: inherit;
+  line-height: 1;
 }
 
 .pricing-card ul {
