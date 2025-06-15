@@ -288,7 +288,11 @@ section.pd-10 {
 ======================================= */
 /* === PRICING SECTION CLEAN === */
 .pricing-section {
+  display: flex;
+  align-items: center;      /* ✅ Vertical centering */
+  justify-content: center;
   padding: 5rem 1rem;
+  min-height: 100vh;        /* ✅ Ensures there's space to center in */
   background-color: #fff;
 }
 
