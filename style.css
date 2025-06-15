@@ -294,10 +294,12 @@ section.pd-10 {
 
 .pricing-row {
   display: flex;
+  align-items: flex-end; /* ✅ This vertically aligns cards to bottom */
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 0;
+  flex-wrap: wrap;
 }
+
 
 .pricing-card {
   flex: 1;
@@ -395,6 +397,17 @@ section.pd-10 {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .pricing-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pricing-card {
+    margin-bottom: 2rem;
+    height: auto !important;
+  }
+}
 
 /* =======================================
    🎨 Bootstrap Icons Fix
