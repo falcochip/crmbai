@@ -287,19 +287,24 @@ section.pd-10 {
    🎨 PRICING SECTION
 ======================================= */
 /* === PRICING SECTION CLEAN === */
+
 .pricing-section {
   display: flex;
-  align-items: center;      /* ✅ Vertical centering */
   justify-content: center;
+  align-items: center;
   padding: 5rem 1rem;
-  min-height: 100vh;        /* ✅ Ensures there's space to center in */
+  min-height: 100vh;
   background-color: #fff;
+  text-align: center;
+}
+
+.pricing-section .container {
+  width: 100%;
 }
 
 .pricing-row {
   display: flex;
-  align-items: flex-end; /* ✅ This vertically aligns cards to bottom */
-  justify-content: space-between;
+  justify-content: center;
   gap: 0;
   flex-wrap: wrap;
 }
