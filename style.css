@@ -286,31 +286,8 @@ section.pd-10 {
 /* =======================================
    🎨 PRICING SECTION
 ======================================= */
-.pricing-section {
-  padding: 4rem 1rem;
-  background: #ffffff;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2.5rem;
-  color: #1f2c3a;
-}
-
-.pricing-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0;
-}
-
+/* Tiered card height overrides */
 .pricing-card {
   flex: 1;
   min-width: 240px;
@@ -325,79 +302,20 @@ section.pd-10 {
 }
 
 .pricing-card.mint {
-  background: #e7f9f6;
+  height: 540px;
+  background-color: var(--brand-mint);
 }
 
 .pricing-card.featured {
-  background: #1f2c3a;
-  color: #ffffff;
-}
-
-.pricing-card h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-}
-
-.price {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 1rem 0;
-  color: inherit;
-}
-
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-  flex-grow: 1;
-}
-
-.pricing-card ul li {
-  position: relative;
-  padding-left: 1.8rem;
-  margin: 0.5rem 0;
-  line-height: 1.4;
-}
-
-.check::before {
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: #00c2a8 url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>') no-repeat center;
-  background-size: 60% 60%;
-  position: absolute;
-  left: 0;
-  top: 0.25rem;
-}
-
-.x::before {
-  content: "✕";
-  color: #ccc;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0.25rem;
-}
-
-.cta-button {
-  margin-top: 1.5rem;
-  display: inline-block;
-  background-color: #00c2a8;
+  height: 580px;
+  background-color: var(--brand-navy);
   color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  transition: background 0.3s ease;
 }
 
-.cta-button:hover {
-  background-color: #019b87;
+.pricing-card.default-height {
+  height: 500px;
 }
+
 
 /* =======================================
    🎨 Bootstrap Icons Fix
