@@ -566,7 +566,6 @@ section.pd-10 {
 /* Tiers */
 
 .pricing-card.mint {
-    height: 540px;
     background-color: var(--brand-mint);
     .cta-button {
         background-color: var(--brand-coral);
@@ -574,7 +573,6 @@ section.pd-10 {
 }
 
 .pricing-card.featured {
-    height: 580px;
     background-color: var(--brand-navy);
     color: white;
 }
