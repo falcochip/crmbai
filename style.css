@@ -565,10 +565,6 @@ section.pd-10 {
 
 /* Tiers */
 
-.pricing-card.default-height {
-    height: 500px;
-}
-
 .pricing-card.mint {
     height: 540px;
     background-color: var(--brand-mint);
