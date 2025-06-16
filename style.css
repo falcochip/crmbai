@@ -546,6 +546,9 @@ section.pd-10 {
 .pricing-card.mint {
     height: 540px;
     background-color: var(--brand-mint);
+    .cta-button {
+        background-color: var(--brand-coral);
+    }
 }
 
 .pricing-card.featured {
