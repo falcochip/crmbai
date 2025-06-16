@@ -590,6 +590,29 @@ section.pd-10 {
     max-width: 1200px;
 }
 
+.card-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--brand-navy);
+}
+
+.pricing-card.featured .card-icon {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.pricing-card.orange .card-icon {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #1f2c3a;
+}
+
 
 /* Table Styling */
 
