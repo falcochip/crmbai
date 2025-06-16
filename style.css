@@ -599,7 +599,6 @@ section.pd-10 {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
     border-radius: 1rem;
-    padding: 3rem 2rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
