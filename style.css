@@ -350,11 +350,22 @@ section.pd-10 {
 ======================================= */
 
 .pricing-card {
+    flex: 1;
+    min-width: 240px;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    padding-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    border: 1px solid #e0e0e0;
+    color: #1f2c3a;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card {
+    /* make room for button */
 }
 
 
