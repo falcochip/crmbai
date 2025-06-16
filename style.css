@@ -1,469 +1,548 @@
 /* =======================================
    🎨 Theme Variables
 ======================================= */
+
 :root {
-  --brand-navy: #285c8c;
-  --brand-mint: #A8E6CF;
-  --brand-coral: #FF6B6B;
-  --brand-offwhite: #F0F4F8;
+    --brand-navy: #285c8c;
+    --brand-mint: #A8E6CF;
+    --brand-coral: #FF6B6B;
+    --brand-offwhite: #F0F4F8;
 }
+
 
 /* =======================================
    🔤 Global Styles
 ======================================= */
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--brand-offwhite);
-  color: #333;
-  line-height: 1.7;
-  scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--brand-offwhite);
+    color: #333;
+    line-height: 1.7;
+    scroll-behavior: smooth;
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--brand-navy);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--brand-navy);
 }
+
 
 /* =======================================
    🔝 Navbar
 ======================================= */
+
 .navbar {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .navbar .btn-coral {
-  background-color: var(--brand-coral);
-  border: none;
-  transition: background-color 0.3s ease;
+    background-color: var(--brand-coral);
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 .navbar .btn-coral:hover {
-  background-color: #ff4e4e;
+    background-color: #ff4e4e;
 }
 
 .navbar-logo {
-  height: clamp(40px, 8vw, 60px);
-  width: auto;
-  transition: height 0.3s ease;
+    height: clamp(40px, 8vw, 60px);
+    width: auto;
+    transition: height 0.3s ease;
 }
 
 .navbar-brand {
-  margin-right: 1rem;
+    margin-right: 1rem;
 }
 
 .nav-link {
-  font-weight: 600;
-  transition: color 0.2s ease;
+    font-weight: 600;
+    transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: var(--brand-coral);
+    color: var(--brand-coral);
 }
 
 @media (max-width: 991.98px) {
-  .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navbar-nav {
-    align-items: flex-start;
-    text-align: left;
-    gap: 0.5rem;
-  }
-  .navbar .btn {
-    width: fit-content;
-  }
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-nav {
+        align-items: flex-start;
+        text-align: left;
+        gap: 0.5rem;
+    }
+    .navbar .btn {
+        width: fit-content;
+    }
 }
+
 
 /* =======================================
    🦸 Hero Section
 ======================================= */
+
 .hero {
-  height: 90vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  box-sizing: border-box;
-  color: var(--brand-offwhite);
-  background:
-    linear-gradient(rgba(40, 92, 140, 0.99), rgba(40, 92, 140, 0.99)),
-    url('./img/hero-bg.jpg') center/cover no-repeat;
-  background-blend-mode: multiply;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: var(--brand-offwhite);
+    background: linear-gradient(rgba(40, 92, 140, 0.99), rgba(40, 92, 140, 0.99)), url('./img/hero-bg.jpg') center/cover no-repeat;
+    background-blend-mode: multiply;
 }
 
 .hero h1,
 .hero p {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 
 /* =======================================
    🔘 Buttons
 ======================================= */
+
 .btn-danger {
-  background-color: var(--brand-coral);
-  border: none;
+    background-color: var(--brand-coral);
+    border: none;
 }
 
 .btn-outline-light {
-  border-color: #fff;
-  color: #fff;
+    border-color: #fff;
+    color: #fff;
 }
 
 .btn-outline-light:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
+
 
 /* =======================================
    📊 Table
 ======================================= */
+
 .table-primary {
-  background-color: var(--brand-mint) !important;
-  color: var(--brand-navy);
+    background-color: var(--brand-mint) !important;
+    color: var(--brand-navy);
 }
+
 
 /* =======================================
    🧾 Section Padding
 ======================================= */
+
 section.bg-light,
 section#contact,
 section.pd-10 {
-  background-color: var(--brand-offwhite);
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+    background-color: var(--brand-offwhite);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
+
 
 /* =======================================
    👥 Tabs Section (Who We Help)
 ======================================= */
+
 .nav-tabs {
-  border: none;
-  padding-left: 1rem;
+    border: none;
+    padding-left: 1rem;
 }
 
 .nav-tabs .nav-link {
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--brand-navy);
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--brand-navy);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-tabs .nav-link.active {
-  border-bottom: 4px solid var(--brand-coral);
-  color: var(--brand-navy);
-  background-color: transparent;
+    border-bottom: 4px solid var(--brand-coral);
+    color: var(--brand-navy);
+    background-color: transparent;
 }
 
 .nav-tabs .nav-link:hover {
-  color: var(--brand-coral);
+    color: var(--brand-coral);
 }
 
 .tab-pane.active {
-  font-size: 1.125rem;
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 20px rgba(255, 107, 107, 0.08);
-  border: 1px solid rgba(255, 107, 107, 0.1);
-  transition: box-shadow 0.3s ease;
+    font-size: 1.125rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(255, 107, 107, 0.08);
+    border: 1px solid rgba(255, 107, 107, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
 .help-image-placeholder {
-  width: 100%;
-  max-width: 30rem;
-  aspect-ratio: 1 / 1;
-  background-color: #ccc;
-  border-radius: 0.5rem;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 30rem;
+    aspect-ratio: 1 / 1;
+    background-color: #ccc;
+    border-radius: 0.5rem;
+    margin: 0 auto;
 }
+
 
 /* =======================================
    🌟 Why Choose Us (Shared Visual Motif)
 ======================================= */
 
+
 /* Frosted Card Style */
+
 .frosted-card {
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 1rem;
-  padding: 4rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    padding: 4rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
+
 /* Why Choose Us alignment fix */
+
 .why-list {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
 }
 
 .why-list li {
-  display: flex;
-  align-items: center; /* fix: vertical align */
-  gap: 1rem;
-  font-size: 1.125rem;
-  color: #333;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+    display: flex;
+    align-items: center;
+    /* fix: vertical align */
+    gap: 1rem;
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
 .icon-bullet {
-  background-color: var(--brand-mint);
-  color: var(--brand-navy);
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  flex-shrink: 0;
+    background-color: var(--brand-mint);
+    color: var(--brand-navy);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
 
 /* 🤝 Partner Logos */
+
 .partner-logos-strip {
-  background: linear-gradient(to right, var(--brand-mint), var(--brand-navy));
-  padding: 5rem 1rem; /* Increased vertical padding */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: linear-gradient(to right, var(--brand-mint), var(--brand-navy));
+    padding: 5rem 1rem;
+    /* Increased vertical padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-row {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .partner-logo {
-  height: auto;
-  max-height: 60px;          /* slightly larger */
-  width: auto;
-  flex: 0 1 auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  object-fit: contain;
+    height: auto;
+    max-height: 60px;
+    /* slightly larger */
+    width: auto;
+    flex: 0 1 auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    object-fit: contain;
 }
 
 .partner-logo:hover {
-  transform: scale(1.05);
-  opacity: 1;
+    transform: scale(1.05);
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
-  .partner-logo {
-    max-height: 50px;
-  }
-  .logo-row {
-    gap: 1.5rem;
-  }
+    .partner-logo {
+        max-height: 50px;
+    }
+    .logo-row {
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .partner-logo {
-    max-height: 40px;
-  }
-  .logo-row {
-    gap: 1rem;
-  }
+    .partner-logo {
+        max-height: 40px;
+    }
+    .logo-row {
+        gap: 1rem;
+    }
 }
+
 
 /* =======================================
    🎨 PRICING SECTION
 ======================================= */
+
+
 /* === PRICING SECTION CLEAN === */
 
 .pricing-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 1rem;
-  min-height: 100vh;
-  background-color: #fff;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+    min-height: 100vh;
+    background-color: #fff;
+    text-align: center;
 }
 
 .pricing-section .container {
-  width: 100%;
+    width: 100%;
 }
 
 .pricing-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
 }
 
-
 .pricing-card {
-  flex: 1;
-  min-width: 240px;
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  border-radius: 1rem;
-  border: 1px solid #e0e0e0;
-  color: #1f2c3a;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 240px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    border: 1px solid #e0e0e0;
+    color: #1f2c3a;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .pricing-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-  text-align: center; /* ✅ NEW */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    /* ✅ NEW */
 }
 
 .pricing-card .price {
-  font-size: 2.5rem;     /* Larger like example */
-  font-weight: 700;
-  margin: 0 auto 1rem;
-  text-align: center;
-  color: inherit;
-  line-height: 1;
+    font-size: 2.5rem;
+    /* Larger like example */
+    font-weight: 700;
+    margin: 0 auto 1rem;
+    text-align: center;
+    color: inherit;
+    line-height: 1;
 }
 
 .pricing-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem 0;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
 }
 
 .pricing-card ul li {
-  position: relative;
-  padding-left: 1.8rem;
-  margin: 0.5rem 0;
-  line-height: 1.5;
+    position: relative;
+    padding-left: 1.8rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
 }
 
-.check::before {
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: #00c2a8 url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>') no-repeat center;
-  background-size: 60% 60%;
-  position: absolute;
-  left: 0;
-  top: 0.25rem;
+.price-block {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* use a stronger tone if needed */
+    padding: 0.75rem 0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-.x::before {
-  content: "✕";
-  color: #ccc;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0.25rem;
+.pricing-card.featured .price-block {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* CTA Button */
-.cta-button {
-  display: inline-block;
-  background-color: #00c2a8;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #019b87;
-}
-
-/* Tiers */
-.pricing-card.default-height {
-  height: 500px;
+.pricing-card.mint .price-block {
+    background-color: rgba(255, 111, 63, 0.15);
+    /* brand-coral-ish */
 }
 
 .pricing-card.mint {
-  height: 540px;
-  background-color: var(--brand-mint);
+    background-color: #FFE8DD;
+    /* soft orange alternative */
+    color: #1f2c3a;
+}
+
+.pricing-card.mint .cta-button {
+    background-color: var(--brand-coral);
+    color: white;
+}
+
+.pricing-card.mint .cta-button:hover {
+    background-color: #e85a3d;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.check::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #00c2a8 url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>') no-repeat center;
+    background-size: 60% 60%;
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+}
+
+.x::before {
+    content: "✕";
+    color: #ccc;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+}
+
+
+/* CTA Button */
+
+.cta-button {
+    display: inline-block;
+    background-color: #00c2a8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #019b87;
+}
+
+
+/* Tiers */
+
+.pricing-card.default-height {
+    height: 500px;
+}
+
+.pricing-card.mint {
+    height: 540px;
+    background-color: var(--brand-mint);
 }
 
 .pricing-card.featured {
-  height: 580px;
-  background-color: var(--brand-navy);
-  color: white;
+    height: 580px;
+    background-color: var(--brand-navy);
+    color: white;
 }
 
 @media (max-width: 768px) {
-  .pricing-row {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .pricing-card {
-    margin-bottom: 2rem;
-    height: auto !important;
-  }
+    .pricing-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .pricing-card {
+        margin-bottom: 2rem;
+        height: auto !important;
+    }
 }
+
 
 /* =======================================
    🎨 Bootstrap Icons Fix
 ======================================= */
-.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
-  font-weight: bolder !important;
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+    font-weight: bolder !important;
 }
 
 .frosted-card {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 1rem;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 1200px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
+
 /* Table Styling */
+
 .clean-table {
-  border-collapse: collapse;
-  width: 100%;
-  background: transparent;
+    border-collapse: collapse;
+    width: 100%;
+    background: transparent;
 }
 
 .clean-table th {
-  background-color: var(--brand-mint);
-  color: var(--brand-navy);
-  font-weight: 600;
-  padding: 0.75rem;
-  text-align: center;
-  border: none;
+    background-color: var(--brand-mint);
+    color: var(--brand-navy);
+    font-weight: 600;
+    padding: 0.75rem;
+    text-align: center;
+    border: none;
 }
 
 .clean-table td {
-  padding: 0.75rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
+    padding: 0.75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
 
+
 /* Adjust icons for clarity */
+
 .clean-table td:first-child {
-  text-align: left;
-  font-weight: 500;
+    text-align: left;
+    font-weight: 500;
 }

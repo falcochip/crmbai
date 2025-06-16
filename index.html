@@ -1,228 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CRM‑BAI Data Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM‑BAI Data Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#overview">
-        <img src="./img/logo.png" alt="CRM‑bai" class="navbar-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#overview">
+                <img src="./img/logo.png" alt="CRM‑bai" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-center text-center text-lg-start">
-          <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-            <a class="btn btn-coral text-white" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
-    <h1 class="display-5 fw-bold">Your CRM is a Mess &ndash; We&rsquo;ll Fix That.</h1>
-    <p class="lead mb-4">
-      Affordable CRM cleanup services for small businesses.<br>
-      No subscriptions. No software bloat. Just clean, organized CRM data you can actually use.
-    </p>
-    <div>
-      <a href="#contact" class="btn btn-danger me-2">Book a Free Audit</a>
-      <a href="#contact" class="btn btn-outline-light">Schedule a Call</a>
-    </div>
-  </section>
-
-  <!-- Who We Help -->
-  <section id="services" class="pd-10" data-aos="fade-up">
-    <div class="container frosted-card">
-      <h2 class="mb-4">Who We Help</h2>
-      <div class="row align-items-start">
-        <div class="col-lg-8">
-          <ul class="nav nav-tabs" id="helpTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#sales" type="button">Sales &amp; Marketing Pros</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ecom" type="button">E‑Commerce</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service" type="button">Service Businesses</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#anyone" type="button">Anyone</button>
-            </li>
-          </ul>
-          <div class="tab-content tab-shadow bg-white rounded">
-            <div class="tab-pane fade show active" id="sales">
-              <p><strong>Too many leads, not enough clarity?</strong><br>Your CRM is overflowing — contacts from forms, events, LinkedIn, cold outreach… and it’s nearly impossible to tell who’s qualified, who’s duplicated, and who’s ready to close.</p>
-              <p><strong>We help sales and marketing teams reclaim control of their pipeline by:</strong></p>
-              <ul>
-                <li>Merging duplicate records</li>
-                <li>Organizing contacts by source, stage, or intent</li>
-                <li>Cleaning up tags, notes, and custom fields</li>
-                <li>Removing outdated or irrelevant data</li>
-              </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center text-center text-lg-start">
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-coral text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="tab-pane fade" id="ecom"><p>Content for E-Commerce...</p></div>
-            <div class="tab-pane fade" id="service"><p>Content for Service Businesses...</p></div>
-            <div class="tab-pane fade" id="anyone"><p>Content for Anyone...</p></div>
-          </div>
         </div>
-        <div class="col-lg-4 text-center">
-          <div class="d-none d-lg-block">
-            <div class="bg-secondary help-image-placeholder"></div>
-          </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-5 fw-bold">Your CRM is a Mess &ndash; We&rsquo;ll Fix That.</h1>
+        <p class="lead mb-4">
+            Affordable CRM cleanup services for small businesses.<br> No subscriptions. No software bloat. Just clean, organized CRM data you can actually use.
+        </p>
+        <div>
+            <a href="#contact" class="btn btn-danger me-2">Book a Free Audit</a>
+            <a href="#contact" class="btn btn-outline-light">Schedule a Call</a>
         </div>
-      </div>
-    </div>
-  </section>
-<!-- Why Choose Us -->
-<section class="why-choose-us bg-offwhite pd-10" data-aos="fade-up">
-  <div class="container">
-    <div class="frosted-card">
-      <h2 class="mb-4">Why Choose Us</h2>
-      <ul class="why-list list-unstyled">
-        <li>
-          <span class="icon-bullet"><i class="bi bi-check-lg"></i></span>
-          Platform-flexible (HubSpot, Salesforce, Zoho, Pipedrive, Airtable, even spreadsheets)
-        </li>
-        <li>
-          <span class="icon-bullet"><i class="bi bi-check-lg"></i></span>
-          Hands-on, human-led service — not just automation
-        </li>
-        <li>
-          <span class="icon-bullet"><i class="bi bi-check-lg"></i></span>
-          Flat-rate pricing based on contact volume, not hours or complexity
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Partner Logos -->
-<section class="partner-logos-strip">
-  <div class="logo-row container">
-    <img src="./img/logo-salesforce.png" alt="Salesforce" class="partner-logo" id="salesforce" />
-    <img src="./img/logo-hubspot.png" alt="HubSpot" class="partner-logo" />
-    <img src="./img/logo-zoho.png" alt="Zoho" class="partner-logo" />
-    <img src="./img/logo-pipedrive.svg" alt="Pipedrive" class="partner-logo" id="pipedrive"/>
-    <img src="./img/logo-airtable.svg" alt="Airtable" class="partner-logo" />
-  </div>
-</section>
-
-<!-- Our Packages --><section class="pricing-section" id="pricing">
-  <div class="container">
-    <div class="frosted-card">
-      <h2 class="mb-4">Our Packages</h2>
-      <div class="pricing-row">
-        <!-- CRM Audit -->
-        <div class="pricing-card default-height">
-          <h3>CRM Audit</h3>
-          <p class="price">$0</p>
-          <ul>
-            <li class="check">CRM Health Report</li>
-            <li class="check">Top Fixes Recommendation</li>
-            <li class="x">Data Cleanup</li>
-            <li class="x">Data Standardization</li>
-            <li class="x">Custom Views/Filters</li>
-            <li class="x">Regular Maintenance</li>
-          </ul>
-          <a href="#" class="cta-button">Choose</a>
+    <!-- Who We Help -->
+    <section id="services" class="pd-10" data-aos="fade-up">
+        <div class="container frosted-card">
+            <h2 class="mb-4">Who We Help</h2>
+            <div class="row align-items-start">
+                <div class="col-lg-8">
+                    <ul class="nav nav-tabs" id="helpTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#sales" type="button">Sales &amp; Marketing Pros</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ecom" type="button">E‑Commerce</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service" type="button">Service Businesses</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#anyone" type="button">Anyone</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content tab-shadow bg-white rounded">
+                        <div class="tab-pane fade show active" id="sales">
+                            <p><strong>Too many leads, not enough clarity?</strong><br>Your CRM is overflowing — contacts from forms, events, LinkedIn, cold outreach… and it’s nearly impossible to tell who’s qualified, who’s duplicated, and who’s ready to
+                                close.
+                            </p>
+                            <p><strong>We help sales and marketing teams reclaim control of their pipeline by:</strong></p>
+                            <ul>
+                                <li>Merging duplicate records</li>
+                                <li>Organizing contacts by source, stage, or intent</li>
+                                <li>Cleaning up tags, notes, and custom fields</li>
+                                <li>Removing outdated or irrelevant data</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="ecom">
+                            <p>Content for E-Commerce...</p>
+                        </div>
+                        <div class="tab-pane fade" id="service">
+                            <p>Content for Service Businesses...</p>
+                        </div>
+                        <div class="tab-pane fade" id="anyone">
+                            <p>Content for Anyone...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="d-none d-lg-block">
+                        <div class="bg-secondary help-image-placeholder"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Clean-up <1000 -->
-        <div class="pricing-card default-height">
-          <h3>Clean-up<br>&lt;1,000 records</h3>
-          <p class="price">$299</p>
-          <ul>
-            <li class="check">CRM Health Report</li>
-            <li class="check">Top Fixes Recommendation</li>
-            <li class="check">Data Cleanup</li>
-            <li class="check">Data Standardization</li>
-            <li class="check">Custom Views/Filters</li>
-            <li class="x">Regular Maintenance</li>
-          </ul>
-          <a href="#" class="cta-button">Choose</a>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="why-choose-us bg-offwhite pd-10" data-aos="fade-up">
+        <div class="container">
+            <div class="frosted-card">
+                <h2 class="mb-4">Why Choose Us</h2>
+                <ul class="why-list list-unstyled">
+                    <li>
+                        <span class="icon-bullet"><i class="bi bi-check-lg"></i></span> Platform-flexible (HubSpot, Salesforce, Zoho, Pipedrive, Airtable, even spreadsheets)
+                    </li>
+                    <li>
+                        <span class="icon-bullet"><i class="bi bi-check-lg"></i></span> Hands-on, human-led service — not just automation
+                    </li>
+                    <li>
+                        <span class="icon-bullet"><i class="bi bi-check-lg"></i></span> Flat-rate pricing based on contact volume, not hours or complexity
+                    </li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <!-- Clean-up >1000 -->
-        <div class="pricing-card mint">
-          <h3>Clean-up<br>&gt;1,000 records</h3>
-          <p class="price">$599</p>
-          <ul>
-            <li class="check">CRM Health Report</li>
-            <li class="check">Top Fixes Recommendation</li>
-            <li class="check">Data Cleanup</li>
-            <li class="check">Data Standardization</li>
-            <li class="check">Custom Views/Filters</li>
-            <li class="x">Regular Maintenance</li>
-          </ul>
-          <a href="#" class="cta-button">Choose</a>
+
+    <!-- Partner Logos -->
+    <section class="partner-logos-strip">
+        <div class="logo-row container">
+            <img src="./img/logo-salesforce.png" alt="Salesforce" class="partner-logo" id="salesforce" />
+            <img src="./img/logo-hubspot.png" alt="HubSpot" class="partner-logo" />
+            <img src="./img/logo-zoho.png" alt="Zoho" class="partner-logo" />
+            <img src="./img/logo-pipedrive.svg" alt="Pipedrive" class="partner-logo" id="pipedrive" />
+            <img src="./img/logo-airtable.svg" alt="Airtable" class="partner-logo" />
         </div>
+    </section>
 
-        <!-- Monthly Hygiene -->
-        <div class="pricing-card featured">
-          <h3>Monthly Hygiene</h3>
-          <p class="price">$149/mo</p>
-          <ul>
-            <li class="check">CRM Health Report</li>
-            <li class="check">Top Fixes Recommendation</li>
-            <li class="check">Data Cleanup</li>
-            <li class="check">Data Standardization</li>
-            <li class="check">Custom Views/Filters</li>
-            <li class="check">Regular Maintenance</li>
-          </ul>
-          <a href="#" class="cta-button">Choose</a>
+    <!-- Our Packages -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="frosted-card">
+                <h2 class="mb-4">Our Packages</h2>
+                <div class="pricing-row">
+                    <!-- CRM Audit -->
+                    <div class="pricing-card default-height">
+                        <div class="card-title">
+                            Clean-up<br>&lt;1,000 records
+                        </div>
+                        <div class="price-block">
+                            <p class="price">$299</p>
+                        </div>
+
+                        <ul>
+                            <li class="check">CRM Health Report</li>
+                            <li class="check">Top Fixes Recommendation</li>
+                            <li class="x">Data Cleanup</li>
+                            <li class="x">Data Standardization</li>
+                            <li class="x">Custom Views/Filters</li>
+                            <li class="x">Regular Maintenance</li>
+                        </ul>
+                        <a href="#" class="cta-button">Choose</a>
+                    </div>
+
+                    <!-- Clean-up <1000 -->
+                    <div class="pricing-card default-height">
+                        <div class="card-title">
+                            Clean-up<br>&lt;1,000 records
+                        </div>
+                        <div class="price-block">
+                            <p class="price">$299</p>
+                        </div>
+
+                        <ul>
+                            <li class="check">CRM Health Report</li>
+                            <li class="check">Top Fixes Recommendation</li>
+                            <li class="check">Data Cleanup</li>
+                            <li class="check">Data Standardization</li>
+                            <li class="check">Custom Views/Filters</li>
+                            <li class="x">Regular Maintenance</li>
+                        </ul>
+                        <a href="#" class="cta-button">Choose</a>
+                    </div>
+
+                    <!-- Clean-up >1000 -->
+                    <div class="pricing-card mint">
+                        <div class="card-title">
+                            Clean-up<br>&lt;1,000 records
+                        </div>
+                        <div class="price-block">
+                            <p class="price">$299</p>
+                        </div>
+
+                        <ul>
+                            <li class="check">CRM Health Report</li>
+                            <li class="check">Top Fixes Recommendation</li>
+                            <li class="check">Data Cleanup</li>
+                            <li class="check">Data Standardization</li>
+                            <li class="check">Custom Views/Filters</li>
+                            <li class="x">Regular Maintenance</li>
+                        </ul>
+                        <a href="#" class="cta-button">Choose</a>
+                    </div>
+
+                    <!-- Monthly Hygiene -->
+                    <div class="pricing-card featured">
+                        <h3>Monthly Hygiene</h3>
+                        <div class="price-block">
+                            <p class="price">$299</p>
+                        </div>
+
+                        <ul>
+                            <li class="check">CRM Health Report</li>
+                            <li class="check">Top Fixes Recommendation</li>
+                            <li class="check">Data Cleanup</li>
+                            <li class="check">Data Standardization</li>
+                            <li class="check">Custom Views/Filters</li>
+                            <li class="check">Regular Maintenance</li>
+                        </ul>
+                        <a href="#" class="cta-button">Choose</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
 
-  <!-- Contact Form -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4">Let’s Talk</h2>
-      <form>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Full Name" />
-          </div>
-          <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Email" />
-          </div>
-          <div class="col-12">
-            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-          </div>
-          <div class="col-12 text-center">
-            <button type="submit" class="btn btn-coral">Send Message</button>
-          </div>
+    <!-- Contact Form -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Let’s Talk</h2>
+            <form>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Full Name" />
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-coral">Send Message</button>
+                    </div>
+                </div>
+            </form>
         </div>
-      </form>
-    </div>
-  </section>
+    </section>
 
-  <!-- Bootstrap + AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-  <script src="script.js"></script>
+    <!-- Bootstrap + AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
