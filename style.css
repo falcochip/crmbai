@@ -313,6 +313,11 @@ section.pd-10 {
 
 /* === PRICING SECTION CLEAN === */
 
+
+/* =======================================
+   🎯 Pricing Section Layout
+======================================= */
+
 .pricing-section {
     display: flex;
     justify-content: center;
@@ -331,9 +336,14 @@ section.pd-10 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
     flex-wrap: wrap;
+    gap: 0;
 }
+
+
+/* =======================================
+   🧊 Card Base Styling
+======================================= */
 
 .pricing-card {
     flex: 1;
@@ -342,7 +352,6 @@ section.pd-10 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: left;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(12px);
     border-radius: 1rem;
@@ -351,23 +360,45 @@ section.pd-10 {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-.pricing-card h3 {
-    font-size: 1.2rem;
+
+/* Card Title */
+
+.card-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.4;
-    text-align: center;
-    /* ✅ NEW */
+    word-wrap: break-word;
 }
 
-.pricing-card .price {
-    font-size: 2.5rem;
-    /* Larger like example */
-    font-weight: 700;
-    margin: 0 auto 1rem;
-    text-align: center;
-    color: inherit;
-    line-height: 1;
+
+/* Price Block */
+
+.price-block {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
+
+.price {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    color: inherit;
+    text-align: center;
+}
+
+
+/* =======================================
+   ✅ Plan Lists
+======================================= */
 
 .pricing-card ul {
     list-style: none;
@@ -382,46 +413,84 @@ section.pd-10 {
     line-height: 1.5;
 }
 
-.price-block {
-    background-color: rgba(0, 0, 0, 0.1);
-    /* use a stronger tone if needed */
-    padding: 0.75rem 0;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+.check::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #00c2a8 url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>') no-repeat center;
+    background-size: 60% 60%;
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+}
+
+.x::before {
+    content: "✕";
+    color: #ccc;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+}
+
+
+/* =======================================
+   🔘 CTA Button
+======================================= */
+
+.cta-button {
+    display: inline-block;
+    width: 100%;
+    background-color: #00c2a8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
     text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #019b87;
+}
+
+
+/* =======================================
+   🌈 Card Themes
+======================================= */
+
+.pricing-card.orange {
+    background-color: #FFE8DD;
+    color: #1f2c3a;
+}
+
+.pricing-card.orange .price-block {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured {
+    background-color: var(--brand-navy);
+    color: white;
 }
 
 .pricing-card.featured .price-block {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-.pricing-card.mint .price-block {
-    background-color: rgba(255, 111, 63, 0.15);
-    /* brand-coral-ish */
-}
 
-.pricing-card.mint {
-    background-color: #FFE8DD;
-    /* soft orange alternative */
-    color: #1f2c3a;
-}
+/* Responsive fallback */
 
-.pricing-card.mint .cta-button {
-    background-color: var(--brand-coral);
-    color: white;
-}
-
-.pricing-card.mint .cta-button:hover {
-    background-color: #e85a3d;
-}
-
-.card-title {
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.4;
-    word-wrap: break-word;
+@media (max-width: 768px) {
+    .pricing-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .pricing-card {
+        margin-bottom: 2rem;
+        height: auto !important;
+    }
 }
 
 .check::before {
