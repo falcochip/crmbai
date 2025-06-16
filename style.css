@@ -594,6 +594,44 @@ section.pd-10 {
     }
 }
 
+.contact-section {
+    background-color: #f9fafb;
+    padding: 5rem 1rem;
+}
+
+.frosted-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section .form-control {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.contact-section textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-mint {
+    background-color: #00c2a8;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-mint:hover {
+    background-color: #019b87;
+}
+
 
 /* =======================================
    🎨 Bootstrap Icons Fix
