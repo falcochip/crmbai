@@ -60,6 +60,7 @@ h2 {
 .nav-link {
     font-weight: 600;
     transition: color 0.2s ease;
+    padding: 0.5rem 0.6rem;
 }
 
 .nav-link:hover {
