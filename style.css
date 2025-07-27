@@ -194,11 +194,14 @@ section.pd-10 {
 }
 
 .help-image {
-    max-height: 150% !important;
-    height: auto;
-    object-fit: contain;
-    margin-top: 3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
     opacity: 0.08;
+    /* 👈 subtle background look */
+    z-index: 1;
 }
 
 @media (min-width: 1200px) {
