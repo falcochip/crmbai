@@ -20,6 +20,7 @@ body {
     color: #333;
     line-height: 1.7;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -399,7 +400,6 @@ section.pd-10 {
     align-items: center;
     flex-wrap: wrap;
     gap: 0;
-    overflow-x: hidden;
 }
 
 
