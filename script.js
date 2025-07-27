@@ -37,3 +37,26 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.querySelectorAll('.contact-cta').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        const messageBox = document.querySelector('#contact textarea');
+        const message = this.getAttribute('data-message');
+
+        messageBox.value = message;
+
+        // Highlight message box
+        messageBox.classList.add('highlight-box');
+
+        // Scroll to form and focus
+        messageBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => {
+            messageBox.focus();
+        }, 500);
+
+        // Remove highlight after 3 seconds
+        setTimeout(() => {
+            messageBox.classList.remove('highlight-box');
+        }, 3000);
+    });
+});
