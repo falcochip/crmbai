@@ -211,6 +211,17 @@ section.pd-10 {
     }
 }
 
+@media (min-width: 1200px) {
+    #services .frosted-card {
+        min-height: 600px;
+        /* Adjust this value as needed */
+    }
+    .why-choose-us .frosted-card {
+        min-height: 600px;
+        /* Match value to #services */
+    }
+}
+
 
 /* =======================================
    🌟 Why Choose Us (Shared Visual Motif)
