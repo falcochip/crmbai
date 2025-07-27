@@ -792,3 +792,19 @@ section.pd-10 {
     background-color: var(--brand-offwhite);
     background-attachment: fixed;
 }
+
+@keyframes highlightBox {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 8px 4px rgba(255, 0, 0, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+
+.message-highlight {
+    animation: highlightBox 1.2s ease;
+}

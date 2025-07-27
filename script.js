@@ -20,10 +20,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 hiddenField.value = selectedPlan;
             }
 
-            // Pre-fill message box (if empty)
+            // Update message box and highlight it
             const messageBox = document.getElementById('message-box');
-            if (messageBox && messageBox.value.trim() === '') {
+            if (messageBox) {
                 messageBox.value = `I’m interested in the "${selectedPlan}" plan. Please tell me more.`;
+                messageBox.classList.add('message-highlight');
+
+                // Remove animation class after animation completes
+                setTimeout(() => {
+                    messageBox.classList.remove('message-highlight');
+                }, 1300);
             }
         });
     });
