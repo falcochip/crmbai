@@ -568,7 +568,6 @@ section.pd-10 {
 
 .pricing-card.mint {
     background-color: var(--brand-mint);
-    height: 38rem;
     .cta-button {
         background-color: var(--brand-coral);
     }
@@ -578,6 +577,11 @@ section.pd-10 {
     background-color: var(--brand-navy);
     color: white;
     height: 40rem;
+}
+
+.pricing-card.default-height,
+.pricing-card.mint {
+    height: 38rem;
 }
 
 @media (max-width: 768px) {
