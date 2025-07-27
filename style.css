@@ -20,7 +20,7 @@ body {
     color: #333;
     line-height: 1.7;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 h2 {
