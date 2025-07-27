@@ -685,3 +685,10 @@ section.pd-10 {
     text-align: left;
     font-weight: 500;
 }
+
+.bg-network {
+    background: url('./img/bg-network.png') no-repeat center top;
+    background-size: cover;
+    background-color: var(--brand-offwhite);
+    background-attachment: fixed;
+}
