@@ -303,6 +303,11 @@ section.pd-10 {
     gap: 2rem;
 }
 
+img#Salesforce,
+img#Pipedrive {
+    max-height: 6px;
+}
+
 @media (max-width: 768px) {
     .partner-logo {
         max-height: 50px;
