@@ -146,7 +146,6 @@ h2 {
 section.bg-light,
 section#contact,
 section.pd-10 {
-    background-color: var(--brand-offwhite);
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -687,7 +686,7 @@ section.pd-10 {
 }
 
 .bg-network {
-    background: url('./img/bg-network.png') no-repeat center top;
+    background: url('./img/bg.png') no-repeat center top;
     background-size: cover;
     background-color: var(--brand-offwhite);
     background-attachment: fixed;
