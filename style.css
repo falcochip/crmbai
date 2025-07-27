@@ -295,17 +295,42 @@ section.pd-10 {
     justify-content: center;
 }
 
-.logo-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+.scroll-strip {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, #a8e6cf, #2c3e50);
+    /* your background */
+    padding: 2rem 0;
 }
 
-img#Salesforce,
-img#Pipedrive {
-    max-height: 6rem;
+.scroll-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+    gap: 3rem;
+    align-items: center;
+}
+
+.partner-logo {
+    height: 50px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    /* ensures visibility on gradient */
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.partner-logo:hover {
+    opacity: 1;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 768px) {
