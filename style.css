@@ -363,6 +363,7 @@ section.pd-10 {
     border: 1px solid #e0e0e0;
     color: #1f2c3a;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    margin: 0 0.2rem;
 }
 
 .pricing-card {
@@ -581,7 +582,7 @@ section.pd-10 {
 
 .pricing-card.default-height,
 .pricing-card.mint {
-    height: 40rem;
+    height: 38rem;
 }
 
 @media (max-width: 768px) {
