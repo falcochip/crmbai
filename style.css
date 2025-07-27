@@ -287,6 +287,22 @@ section.pd-10 {
     opacity: 1;
 }
 
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 @media (max-width: 768px) {
     .partner-logo {
         max-height: 50px;
