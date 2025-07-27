@@ -232,34 +232,42 @@ section.pd-10 {
 
 /* Why Choose Us alignment fix */
 
-.why-list {
-    padding-left: 0;
-    list-style: none;
-    margin: 0;
+.why-choose-us {
+    text-align: center;
 }
 
-.why-list li {
+.choose-card {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.choose-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    font-size: 2.2rem;
+    background-color: #d1f7e6;
+    /* minty bg */
+    color: #0f766e;
+    /* deep teal accent */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
-    /* fix: vertical align */
-    gap: 1rem;
-    font-size: 1.125rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    justify-content: center;
+    margin: 0 auto;
 }
 
-.icon-bullet {
-    background-color: var(--brand-mint);
-    color: var(--brand-navy);
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    flex-shrink: 0;
+@media (max-width: 767px) {
+    .choose-card {
+        padding: 1.5rem;
+    }
 }
 
 
