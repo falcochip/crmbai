@@ -424,22 +424,25 @@
             <div class="container-fluid frosted-card ">
 
                 <h2 class="mb-4 text-center ">Let’s Talk</h2>
-                <form>
-                    <div class="row g-3 ">
-                        <div class="col-md-6 ">
-                            <input type="text " class="form-control " placeholder="Full Name " />
+                <form name="contact" method="POST" netlify>
+                    <input type="hidden" name="form-name" value="contact" />
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
                         </div>
-                        <div class="col-md-6 ">
-                            <input type="email " class="form-control " placeholder="Email " />
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required>
                         </div>
-                        <div class="col-12 ">
-                            <textarea class="form-control " rows="5 " placeholder="Your Message "></textarea>
+                        <div class="col-12">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <div class="col-12 text-center ">
-                            <button type="submit " class="btn btn-mint ">Send Message</button>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-mint">Send Message</button>
                         </div>
                     </div>
                 </form>
+
 
             </div>
         </section>
