@@ -188,13 +188,19 @@ section.pd-10 {
     transition: box-shadow 0.3s ease;
 }
 
-.help-image-placeholder {
-    width: 100%;
-    max-width: 30rem;
-    aspect-ratio: 1 / 1;
-    background-color: #ccc;
-    border-radius: 0.5rem;
-    margin: 0 auto;
+.help-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    max-height: 350px;
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+    .help-image {
+        transform: scale(1.15);
+        /* adjust this value to fine-tune */
+    }
 }
 
 
