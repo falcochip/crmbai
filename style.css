@@ -509,13 +509,13 @@ section.pd-10 {
         gap: 1rem;
     }
     .pricing-card {
-        flex: 1 1 calc(50% - 1rem);
-        /* Two per row */
-        max-width: 480px;
-        margin-bottom: 2rem;
+        flex: 1 1 45%;
+        /* two per row */
+        max-width: 500px;
     }
+    .pricing-card.featured,
     .pricing-card.mint {
-        flex-basis: 100%;
+        flex: 1 1 45%;
     }
 }
 
@@ -528,10 +528,6 @@ section.pd-10 {
         width: 100%;
         max-width: 500px;
         margin-bottom: 2rem;
-    }
-    .pricing-card.featured {
-        order: -1;
-        /* optional: bring blue featured card to top */
     }
 }
 
