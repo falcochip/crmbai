@@ -321,7 +321,6 @@ section.pd-10 {
 .pricing-section {
     padding: 5rem 1rem;
     min-height: 100vh;
-    background-color: #fff;
     h3 {
         font-size: 1.5rem;
         font-weight: bold;
@@ -596,7 +595,6 @@ section.pd-10 {
 }
 
 .contact-section {
-    background-color: #f9fafb;
     padding: 5rem 1rem;
 }
 
