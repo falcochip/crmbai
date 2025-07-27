@@ -199,7 +199,7 @@ section.pd-10 {
     right: 0;
     width: auto;
     height: 100%;
-    opacity: 0.08;
+    opacity: 0.2;
     /* 👈 subtle background look */
     z-index: 1;
 }
