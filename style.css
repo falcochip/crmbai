@@ -520,6 +520,22 @@ section.pd-10 {
     }
 }
 
+@media (max-width: 910px) {
+    .pricing-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 2rem;
+    }
+    .pricing-card.featured {
+        order: -1;
+        /* optional: bring blue featured card to top */
+    }
+}
+
 
 /* =======================================
    🔘 CTA Button
