@@ -235,10 +235,10 @@ section.pd-10 {
 .why-choose-us {
     padding-top: 0 !important;
     h3 {
-        font-size: 2rem;
+        font-size: .5rem;
         font-weight: 700;
         color: var(--brand-navy);
-        margin-bottom: 1.5rem;
+        margin-top: 1rem;
     }
 }
 
