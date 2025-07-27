@@ -808,3 +808,28 @@ section.pd-10 {
 .message-highlight {
     animation: highlightBox 1.2s ease;
 }
+
+.site-footer {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #285c8c;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 4rem;
+}
+
+.site-footer a {
+    color: #0f766e;
+    text-decoration: underline;
+}
+
+.site-footer a:hover {
+    text-decoration: none;
+}
+
+.site-footer .small-text {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #444;
+}
