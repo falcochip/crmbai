@@ -197,6 +197,7 @@ section.pd-10 {
     max-height: 100%;
     height: auto;
     object-fit: contain;
+    margin-top: 3rem;
 }
 
 @media (min-width: 1200px) {
