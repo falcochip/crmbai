@@ -311,7 +311,6 @@ section.pd-10 {
 }
 
 .partner-logo {
-    height: 50px;
     object-fit: contain;
     filter: brightness(0) invert(1);
     /* ensures visibility on gradient */
