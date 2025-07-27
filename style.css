@@ -502,6 +502,24 @@ section.pd-10 {
     top: 0.25rem;
 }
 
+@media (max-width: 1160px) and (min-width: 911px) {
+    .pricing-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .pricing-card {
+        flex: 1 1 calc(50% - 1rem);
+        /* Two per row */
+        max-width: 480px;
+        margin-bottom: 2rem;
+    }
+    .pricing-card.mint {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
 
 /* =======================================
    🔘 CTA Button
