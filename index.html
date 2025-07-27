@@ -47,12 +47,12 @@
     </section>
 
     <section class="bg-network">
-        <!-- Who We Help -->
         <section id="services" class="pd-10" data-aos="fade-up">
             <div class="container frosted-card">
                 <h2 class="mb-4">Who We Help</h2>
                 <div class="row align-items-start">
-                    <div class="col-lg-9">
+                    <!-- TABS for Desktop -->
+                    <div class="col-lg-9 d-none d-md-block">
                         <ul class="nav nav-tabs" id="helpTabs" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#sales" type="button">Sales &amp; Marketing Pros</button>
@@ -69,8 +69,7 @@
                         </ul>
                         <div class="tab-content tab-shadow bg-white rounded">
                             <div class="tab-pane fade show active" id="sales">
-                                <p>You live in your CRM—but cluttered data is slowing down your campaigns and costing you conversions. We help by:
-                                </p>
+                                <p>You live in your CRM—but cluttered data is slowing down your campaigns and costing you conversions. We help by:</p>
                                 <ul>
                                     <li>Removing duplicate leads and outdated contacts</li>
                                     <li>Standardizing naming conventions for cleaner segmentation</li>
@@ -111,33 +110,102 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 text-center">
-                        <div class="d-none d-lg-block">
-                            <div class="bg-secondary help-image-placeholder"></div>
+
+                    <!-- ACCORDION for Mobile -->
+                    <div class="col-12 d-md-none">
+                        <div class="accordion" id="whoHelpAccordion">
+                            <!-- Each accordion-item below represents a tab-pane above -->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSales">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSales" aria-expanded="true" aria-controls="collapseSales">
+                Sales & Marketing Pros
+              </button>
+                                </h2>
+                                <div id="collapseSales" class="accordion-collapse collapse show" aria-labelledby="headingSales" data-bs-parent="#whoHelpAccordion">
+                                    <div class="accordion-body">
+                                        <p>You live in your CRM—but cluttered data is slowing down your campaigns and costing you conversions. We help by:</p>
+                                        <ul>
+                                            <li>Removing duplicate leads and outdated contacts</li>
+                                            <li>Standardizing naming conventions for cleaner segmentation</li>
+                                            <li>Rebuilding lists so your automations run smoothly</li>
+                                            <li>Helping you identify and focus on high-quality prospects</li>
+                                        </ul>
+                                        <p><strong>Result: </strong>Better targeting, higher open rates, and a CRM that actually supports your sales goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingRealEstate">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRealEstate" aria-expanded="false">
+                Real Estate Agencies
+              </button>
+                                </h2>
+                                <div id="collapseRealEstate" class="accordion-collapse collapse" data-bs-parent="#whoHelpAccordion">
+                                    <div class="accordion-body">
+                                        <p>Your CRM should be your best agent. Instead, it’s a mess of missed follow-ups and outdated listings. We help by:</p>
+                                        <ul>
+                                            <li>Organizing buyer/seller pipelines and tagging leads by interest</li>
+                                            <li>Cleaning up contact info for smooth communication</li>
+                                            <li>Creating clear stages for follow-ups, showings, and closings</li>
+                                            <li>Integrating email and SMS workflows</li>
+                                        </ul>
+                                        <p><strong>Result: </strong>A pipeline that never leaks and clients who feel remembered—not forgotten.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingMidSize">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMidSize" aria-expanded="false">
+                Mid-Sized Corporations
+              </button>
+                                </h2>
+                                <div id="collapseMidSize" class="accordion-collapse collapse" data-bs-parent="#whoHelpAccordion">
+                                    <div class="accordion-body">
+                                        <p>You’ve outgrown spreadsheets, but your CRM hasn’t scaled with you. We help by:</p>
+                                        <ul>
+                                            <li>Auditing data across departments to eliminate inconsistencies</li>
+                                            <li>Consolidating CRMs or tools after mergers/acquisitions</li>
+                                            <li>Building role-based views and dashboards for leadership, sales, and support teams</li>
+                                            <li>Enabling better reporting and forecasting with accurate data</li>
+                                        </ul>
+                                        <p><strong>Result: </strong>Alignment across teams, cleaner reports, and confident decision-making.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingAnyone">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnyone" aria-expanded="false">
+                Anyone with a CRM
+              </button>
+                                </h2>
+                                <div id="collapseAnyone" class="accordion-collapse collapse" data-bs-parent="#whoHelpAccordion">
+                                    <div class="accordion-body">
+                                        <p>Whether you’ve just started using a CRM or you’ve been winging it for years—if your data is messy, we’re here for you. We help by:</p>
+                                        <ul>
+                                            <li>Fixing bad imports, mislabelled fields, and broken tags</li>
+                                            <li>Streamlining your system so it’s intuitive and efficient</li>
+                                            <li>Training your team on how to maintain a clean CRM</li>
+                                            <li>Building a process that grows with your business</li>
+                                        </ul>
+                                        <p><strong>Result: </strong>More clarity, less chaos, and a CRM that actually works for you.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-lg-3 text-center d-none d-lg-block">
+                        <div class="bg-secondary help-image-placeholder"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Why Choose Us -->
-        <section class="why-choose-us pd-10" data-aos="fade-up">
-            <div class="container">
-                <div class="frosted-card">
-                    <h2 class="mb-4">Why Choose Us</h2>
-                    <ul class="why-list list-unstyled">
-                        <li>
-                            <span class="icon-bullet"><i class="bi bi-check-lg"></i></span> Platform-flexible (HubSpot, Salesforce, Zoho, Pipedrive, Airtable, even spreadsheets)
-                        </li>
-                        <li>
-                            <span class="icon-bullet"><i class="bi bi-check-lg"></i></span> Hands-on, human-led service — not just automation
-                        </li>
-                        <li>
-                            <span class="icon-bullet"><i class="bi bi-check-lg"></i></span> Flat-rate pricing based on contact volume, not hours or complexity
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+
     </section>
 
     <!-- Partner Logos -->
