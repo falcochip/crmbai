@@ -516,7 +516,6 @@ section.pd-10 {
     }
     .pricing-card.mint {
         flex-basis: 100%;
-        max-width: 100%;
     }
 }
 
