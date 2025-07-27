@@ -165,7 +165,7 @@ section.pd-10 {
     font-weight: 600;
     font-size: 1rem;
     color: var(--brand-navy);
-    border-bottom: 2px solid transparent;
+    border-bottom: 0.5px solid var(--brand-coral);
     transition: all 0.3s ease-in-out;
 }
 
