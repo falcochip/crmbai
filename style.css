@@ -212,6 +212,38 @@ section.pd-10 {
     }
 }
 
+.accordion-button {
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    padding: 1rem;
+    box-shadow: none;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(168, 230, 207, 0.3);
+    /* soft mint tone */
+    color: var(--brand-navy);
+    box-shadow: inset 0 -2px 0 var(--brand-coral);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
 
 /* =======================================
    🌟 Why Choose Us (Shared Visual Motif)
