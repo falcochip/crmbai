@@ -305,7 +305,7 @@ section.pd-10 {
 
 img#Salesforce,
 img#Pipedrive {
-    max-height: 6px;
+    max-height: 6rem;
 }
 
 @media (max-width: 768px) {
