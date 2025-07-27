@@ -576,12 +576,12 @@ section.pd-10 {
 .pricing-card.featured {
     background-color: var(--brand-navy);
     color: white;
-    height: 40rem;
+    height: 42rem;
 }
 
 .pricing-card.default-height,
 .pricing-card.mint {
-    height: 38rem;
+    height: 40rem;
 }
 
 @media (max-width: 768px) {
