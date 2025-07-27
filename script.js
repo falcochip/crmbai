@@ -60,3 +60,13 @@ document.querySelectorAll('.contact-cta').forEach(btn => {
         }, 3000);
     });
 });
+
+document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove from all buttons
+        document.querySelectorAll('.accordion-button').forEach(btn => btn.classList.remove('active-clicked'));
+
+        // Add to clicked one
+        this.classList.add('active-clicked');
+    });
+});

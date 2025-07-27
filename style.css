@@ -238,6 +238,12 @@ section.pd-10 {
     outline: none;
 }
 
+.accordion-button.active-clicked {
+    box-shadow: inset 0 -2px 0 var(--brand-coral);
+    background-color: rgba(168, 230, 207, 0.15);
+    color: var(--brand-navy);
+}
+
 
 /* =======================================
    🌟 Why Choose Us (Shared Visual Motif)
