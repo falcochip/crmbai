@@ -188,27 +188,14 @@ section.pd-10 {
     transition: box-shadow 0.3s ease;
 }
 
-
-/* Ensure equal height columns */
-
-#services .row.align-items-start {
-    align-items: stretch;
-}
-
-
-/* Let image column stretch and center vertically */
-
-.help-image-wrapper {
+.image-wrapper {
     height: 100%;
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .help-image {
     max-height: 100%;
-    width: auto;
+    height: auto;
     object-fit: contain;
 }
 
