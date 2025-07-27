@@ -250,18 +250,19 @@ section.pd-10 {
 }
 
 .icon-circle {
-    font-size: 2.2rem;
-    background-color: #d1f7e6;
-    /* minty bg */
+    width: 64px;
+    height: 64px;
+    background-color: #e6fbf3;
+    /* soft mint bg */
     color: #0f766e;
-    /* deep teal accent */
+    /* deep teal */
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    font-size: 28px;
     margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 767px) {
